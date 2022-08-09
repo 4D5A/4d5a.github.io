@@ -22,7 +22,7 @@ author: 4D5A
 navbar-links:
   About Me: "aboutme"
   Resources:
-#    - M365-Tools: "https://github.com/4d5a/m365-tools"
+    - M365-Tools: "https://github.com/4d5a/m365-tools"
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
   Author's home: "https://4d5a.github.io"
