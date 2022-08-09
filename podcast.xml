@@ -5,7 +5,7 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="{{ site.lang }}">
 
     <channel>
-		<atom:link href="{{ site.url }}/podcast.rss" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ site.url }}/podcast.xml" rel="self" type="application/rss+xml" />
 		<title>{{ site.title }}</title>
 		<link>{{ site.url }}{{ site.baseurl }}</link>
 		<language>{{ site.lang }}</language>
@@ -21,9 +21,9 @@ layout: null
 		</itunes:owner>
         <itunes:image href="{{ site.url }}{{ site.baseurl }}/assets/img/itunes.png" />
         <itunes:category text="Technology" />
-        <itunes:category text="Society &amp; Culture" />
         <itunes:category text="Education">
-            <itunes:category text="Educational Technology" />
+            <itunes:category text="Education Technology" />
+        <itunes:category text="Society &amp; Culture" />
         </itunes:category> 
         <itunes:explicit>no</itunes:explicit>
 		
