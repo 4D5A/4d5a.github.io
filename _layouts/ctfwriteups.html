@@ -6,13 +6,10 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-{% for post in site.posts %}
-    {% if post.tags contains "ctfwriteups" %}
-
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
   {% for post in posts %}
-    {% if post.tags contains "podcast" %}
+    {% if post.tags contains "ctfwriteups" %}
     <li class="post-preview">
       <article>
 
