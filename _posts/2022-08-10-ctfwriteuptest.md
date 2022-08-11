@@ -1,5 +1,5 @@
 ---
-layout: ctfwriteups
+layout: post
 title: CTF Writeup Test
 gh-repo: 4D5A
 gh-badge: [follow]
