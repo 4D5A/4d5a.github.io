@@ -144,6 +144,18 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.stackexchange -%}
+  <li class="list-inline-item">
+    <a href="https://stackexchange.com/users/{{ site.social-network-links.stackexchange }}" title="StackExchange">
+      <span class="fa-stack-exchange fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-stack-exchange fa-stack-1x fa-inverse" aria-hidden="true"></i>
+      </span>
+      <span class="sr-only">serverfault</span>
+   </a>
+  </li>
+{%- endif -%}
+
 {%- if site.social-network-links.snapchat -%}
   <li class="list-inline-item">
     <a href="https://www.snapchat.com/add/{{ site.social-network-links.snapchat }}" title="Snapchat">
