@@ -3,6 +3,7 @@ layout: post
 title: What is virtualization
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Information Technology, Virtualization]
 after-content: [disclaimer-notice.html]
 ---

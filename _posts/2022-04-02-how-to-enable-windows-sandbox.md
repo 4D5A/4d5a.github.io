@@ -3,6 +3,7 @@ layout: post
 title: How to enable Windows Sandbox
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Virtualization, Windows 10, Windows 11, Windows Sandbox ]
 after-content: [disclaimer-notice.html]
 ---

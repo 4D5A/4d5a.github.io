@@ -3,6 +3,7 @@ layout: post
 title: Unblocking yourself from WHM
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [WHM, Linux, VPS]
 after-content: [disclaimer-notice.html]
 ---

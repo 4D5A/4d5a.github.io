@@ -3,6 +3,7 @@ layout: post
 title: How to configure DKIM in Microsoft 365
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Email, Microsoft 365, Exchange Online, DKIM, DNS]
 after-content: [disclaimer-notice.html]
 ---

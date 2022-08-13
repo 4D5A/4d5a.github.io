@@ -3,6 +3,7 @@ layout: post
 title: Using a security group for Dynamics 365
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Microsoft 365, Dynamics 365, Azure Active Directory]
 after-content: [disclaimer-notice.html]
 ---

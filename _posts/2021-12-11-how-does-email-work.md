@@ -3,6 +3,7 @@ layout: post
 title: How does email work
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Email, RFC, DNS]
 after-content: [disclaimer-notice.html]
 ---

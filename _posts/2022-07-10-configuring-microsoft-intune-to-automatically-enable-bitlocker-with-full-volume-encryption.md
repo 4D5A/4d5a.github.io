@@ -3,6 +3,7 @@ layout: post
 title: Configuring Microsoft Intune to automatically enable BitLocker with full volume encryption
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Microsoft 365, Intune, BitLocker]
 after-content: [disclaimer-notice.html]
 ---

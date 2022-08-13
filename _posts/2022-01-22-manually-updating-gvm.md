@@ -3,6 +3,7 @@ layout: post
 title: Manually updating GVM
 gh-repo: 4D5A
 gh-badge: [follow]
+categories: [blog]
 tags: [Kali Linux, Cybersecurity, InfoSec]
 after-content: [disclaimer-notice.html]
 ---
