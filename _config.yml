@@ -59,12 +59,12 @@ social-network-links:
 #  youtube: c/daattali
 #  medium: yourname
   reddit: recordedparadox
-  microsoft-docs: recordedparadox271
+#  microsoft-docs: recordedparadox271
 #  linkedin: daattali
 #  xing: yourname
-  stackoverflow: "5870571/user5870571"
-  serverfault: "335183/user5870571"
-  stackexchange: "7756439/user5870571" 
+#  stackoverflow: "5870571/user5870571"
+#  serverfault: "335183/user5870571"
+#  stackexchange: "7756439/user5870571" 
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
@@ -80,7 +80,7 @@ social-network-links:
 #  discord: invite/invite_code or users/userid 
 #  kaggle: yourname
 #  hackerrank: yourname
-  podcast: podcast
+#  podcast: podcast
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
