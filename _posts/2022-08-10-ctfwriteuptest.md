@@ -3,8 +3,8 @@ layout: post
 title: CTF Writeup Test
 gh-repo: 4D5A
 gh-badge: [follow]
-categories: [blog-post]
-tags: [ctfwriteups]
+categories: [ctfwriteups]
+tags: []
 after-content: [disclaimer-notice.html]
 ---
 
