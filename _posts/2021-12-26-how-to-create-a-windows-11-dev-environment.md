@@ -3,7 +3,7 @@ layout: post
 title: How to create a Windows 11 dev environment
 gh-repo: 4D5A
 gh-badge: [follow]
-categories: [blog]
+categories: [blog, demo]
 tags: [Windows 11, Hyper-V, Walkthrough]
 after-content: [disclaimer-notice.html]
 ---
