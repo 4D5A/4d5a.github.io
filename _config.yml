@@ -22,9 +22,9 @@ author: 4D5A
 navbar-links:
   Home: "https://4d5a.github.io"
   About Me: "aboutme"
-  CTF Writeups: "ctfwriteups"
-  Presentations: "presentations"
-  Projects: "projects"
+#  CTF Writeups: "ctfwriteups"
+#  Presentations: "presentations"
+#  Projects: "projects"
 
 
 ################
