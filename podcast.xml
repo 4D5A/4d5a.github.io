@@ -28,7 +28,7 @@ layout: null
         <itunes:explicit>no</itunes:explicit>
 		
 {% for post in site.posts %}
-    {% if post.tags contains "podcast" %}
+    {% if post.categories contains "podcast" %}
         <item>
             <title>{{ post.title | xml_escape }}</title>
             <itunes:author>{{ site.author }}</itunes:author>
