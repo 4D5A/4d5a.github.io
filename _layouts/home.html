@@ -8,6 +8,7 @@ layout: page
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
+  {% if post.categories contains "blog-post" %}
   {% for post in posts %}
     <li class="post-preview">
       <article>
@@ -96,6 +97,7 @@ layout: page
     </li>
   {% endfor %}
 </ul>
+{% endif %}
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
