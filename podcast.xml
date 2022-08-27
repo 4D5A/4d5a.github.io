@@ -53,19 +53,8 @@ layout: null
         <itunes:duration>{{ post.duration }}</itunes:duration>
         <itunes:episode>{{ post.episode }}</itunes:episode>
         <itunes:episodeType>full</itunes:episodeType>
-        
-        
-        
-        
-        
-        <itunes:image href="{{ site.url }}/images/itunes.png" />
-        
-        
-        
-        
-        
         <itunes:keywords>{{ post.keywords }}</itunes:keywords>
-        
+        <itunes:image href="{{ site.url }}/images/itunes.png"/>   
     </item>
 {% endfor %}
 	</channel>
