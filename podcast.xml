@@ -22,8 +22,7 @@ layout: null
         <itunes:image href="{{ site.url }}{{ site.baseurl }}/assets/img/itunes.png" />
         <itunes:category text="Technology" />
         <itunes:category text="Education">
-            <itunes:category text="Education Technology" />
-        <itunes:category text="Society &amp; Culture" />
+        <itunes:category text="Tech News" />
         </itunes:category> 
         <itunes:explicit>no</itunes:explicit>
 		
