@@ -5,6 +5,17 @@ title: 'Tag Index'
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
+#{% for post in site.categories['ctfwriteups'] %}
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
 <div id="full-tags-list">
     {%- for tag in tags_list -%}
         <h2 id="{{- tag -}}" class="linked-section">
@@ -23,3 +34,5 @@ title: 'Tag Index'
         </div>
     {%- endfor -%}
 </div>
+
+{% endfor %}
