@@ -1,7 +1,11 @@
 ---
 layout: page
-title: 'Tag Index'
+title: 'Blue Team Con 2022 Last Minute CTF Writeups'
 ---
+
+{{ content }}
+
+{% assign posts = paginator.posts | default: site.posts %}
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 <div class="post-list">
