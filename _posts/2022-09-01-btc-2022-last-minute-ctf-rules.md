@@ -4,7 +4,7 @@ title: Blue Team Con 2022 Last Minute CTF - Rules
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]
-tags: [BlueTeamCon2022,ctf-intro]
+tags: [BlueTeamCon2022-CTF,ctf-intro]
 after-content: [disclaimer-notice.html]
 ---
 ### Explanation
