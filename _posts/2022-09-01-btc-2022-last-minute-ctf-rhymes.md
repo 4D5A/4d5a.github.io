@@ -30,4 +30,4 @@ If you go to page 4, there is a second line of "redacted" text which contains th
 7. Paste the content into the Flag field in http://18.205.188.77/challenges#Rhymes-14. The flag is BTC{AND-now-YOU-know-MULTIPLE-languages}
 8. Click Submit.
 
-<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-writeups/btc-2022-last-minute-ctf-ryhmes-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Rhymes Screenshot' />
+<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-rhymes/btc-2022-last-minute-ctf-ryhmes-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Rhymes Screenshot' />
