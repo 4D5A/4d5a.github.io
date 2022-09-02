@@ -80,4 +80,4 @@ CyberChef outputs the value ```a7f79674938f6e62fcce7c5aac4eaf3581fceffb88d7d17b8
 23. Paste the flag into the Flag field.
 24. Click Submit.
 
-<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-writeups/btc-2022-last-minute-ctf-naught-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Naught Screenshot' />
+<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-naught/btc-2022-last-minute-ctf-naught-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Naught Screenshot' />
