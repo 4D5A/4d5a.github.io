@@ -7,3 +7,10 @@ categories: [ctfwriteups]
 tags: [BlueTeamCon2022,ctf-intro]
 after-content: [disclaimer-notice.html]
 ---
+### Explanation
+Read about Challenge Writeups and Challenge Guides to find the flag.
+
+### Solving the Challenge
+1. Browse to http://18.205.188.77/writeups
+2. View the source code (unless you are in Missouri ;))
+3. The flag is BTC{Now_to_make_my_own_writeups_4_points.}.
