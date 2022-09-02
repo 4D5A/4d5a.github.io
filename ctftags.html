@@ -5,8 +5,6 @@ title: 'Tag Index'
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-{% for post in site.categories['ctfwriteups'] %}
-
 <div id="full-tags-list">
     {%- for tag in tags_list -%}
         <h2 id="{{- tag -}}" class="linked-section">
@@ -25,5 +23,3 @@ title: 'Tag Index'
         </div>
     {%- endfor -%}
 </div>
-
-{% endfor %}
