@@ -8,7 +8,15 @@ tags: [BlueTeamCon2022-CTF,ctf-forensics]
 after-content: [disclaimer-notice.html]
 ---
 ### Explanation
+In the Paranoia Challenge, we are provided with a zip file and told to "Please utilize the information provided in their archive to see if you can find any additional informtion on the flag And then...". The phrase "additional information" is a clue.
 
+When I opened the zip file, I noticed there is a directory named "_MACOSX". Since we need to look for "additional information" and we were provided a zip file, so I looked for a .DS_Store file.
+
+<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-paranoia/btc-2022-last-minute-ctf-paranoia-archive-directory-list-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Paranoia Archive Directory List Screenshot' />
+
+I opened Paranoia and found a .DS_Store file. I opened the file and it contained the flag.
+
+<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-paranoia/btc-2022-last-minute-ctf-paranoia-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Paranoia Screenshot' />
 
 ### Solving the Challenge
 
