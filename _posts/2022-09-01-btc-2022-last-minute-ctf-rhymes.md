@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blue Team Con 2022 Last Minute CTF - Rhymes
+title: Blue Team Con 2022 CTF - Rhymes
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]

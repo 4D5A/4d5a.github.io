@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blue Team Con 2022 Last Minute CTF - Not for Humans
+title: Blue Team Con 2022 CTF - Not for Humans
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]

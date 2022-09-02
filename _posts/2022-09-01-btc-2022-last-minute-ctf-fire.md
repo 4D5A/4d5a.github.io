@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blue Team Con 2022 Last Minute CTF - Fire
+title: Blue Team Con 2022 CTF - Fire
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]
