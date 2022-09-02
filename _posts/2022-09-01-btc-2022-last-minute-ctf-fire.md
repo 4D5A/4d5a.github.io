@@ -11,13 +11,38 @@ after-content: [disclaimer-notice.html]
 ## Rhymes
 
 ### Explanation
-In the Rhymes Challenge, you are provided with a PDF. It contains two lines of redacted text. The first line of redacted text is on page 2. The second line of redacted text is on line 4.
+In the Fire challenge, we are given the files key4.db and logins.json. These files combined with the name of the challenge being "Fire" is a good hint that we need to crack a firefox password database to obtain the flag.
 
-There are several ways you can uncover the "redacted" text in the PDF. This demonstrates the problems with highlighting in a dark color as a form of "redacting". Someone else can highlight the "redacted" text, copy it, and paste it into a different program like a text editor. Because the original text was not replaced but was only covered with what is essentially black highlighting which is added as a new layer, it can be copy and pasted into a different document.
+Fortunately, there is an open source tool that decrypts Mozilla protected passwords. I started with setting up my linux machine for the challenge.
 
-If you got the flag BTC[Mots D'Heures: Grousses, Rames] and did not receive points for it, that is because it is not the flag. The Rules at http://18.205.188.77/rules tell us that flags will use the format, ```BTC{Flag_goes_here}```.
+```mkdir -p ~/CTF/Fire```
 
-If you go to page 4, there is a second line of "redacted" text which contains the actual flag.
+I saved the key4.db and logins.json files to ~/CTF/Fire.
+
+Next, I am going to change directories to the Fire directory I created.
+
+```cd ~/CTF/Fire```
+
+Next, I used git to clone the firepwd repo.
+
+
+```git clone https://github.com/lclevy/firepwd.git```
+
+firepwd's readme.md states, I need to use the following command to install the program:
+
+```pip install -r requirements.txt```
+
+pip is a package manager for Python and you can pass the -r argument to specify the location of a file that provides a list of required python packages and their versions to automate the installation.
+
+To install firepwd, I first need to change directory into firepwd.
+
+```cd firepwd```
+
+Now, I need to run the firepwd program and specify the location of the key4.db and logins.json files.
+
+```python3 ./firepwd.py -d ~/CTF/Fire```
+
+The tools provides us with the flag, BTC{key3.dbPassword}.
 
 
 ### Solving the Challenge
