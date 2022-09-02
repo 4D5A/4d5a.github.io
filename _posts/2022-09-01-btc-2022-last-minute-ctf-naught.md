@@ -23,7 +23,7 @@ In Naught.xlsx\xl\worksheets, we see sheet1.xml, sheet2.xml, and sheet3.xml.
 
 If we open sheet2.xml in a text editor, there is content that apears to be arranged in rows and columns which is consistent with that we would expect to see with a spreadsheet.
 
-<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-naught/btc-2022-last-minute-ctf-naught-sheet2-xlm-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Naught sheet2.xml Screenshot' />
+<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-naught/btc-2022-last-minute-ctf-naught-sheet2-xml-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Naught sheet2.xml Screenshot' />
 
 Since information in the xlsx file appears to be corrupted, I deleted sheet1.xml in the xlsx file and renamed sheet2.xml to sheet1.xml since the xlsx file already has the required information about sheet1.xml to display its data.
 
