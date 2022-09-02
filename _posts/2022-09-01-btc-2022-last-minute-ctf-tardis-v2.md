@@ -22,7 +22,7 @@ If you are on Windows, you can also use Command Prompt to look for Alternate Dat
 
 To see if a file contains an Alternate Data Steam, you can use the following command:
 
-```dir /r *filename*```
+```dir /r file```
 
 <img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-tardis-v2/btc-2022-last-minute-ctf-tardis-v2-alternate-data-steam-using-command-prompt.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Tardis v2' />
 
