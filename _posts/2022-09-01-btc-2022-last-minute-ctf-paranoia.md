@@ -9,6 +9,7 @@ after-content: [disclaimer-notice.html]
 ---
 ### Explanation
 
+
 ### Solving the Challenge
 
 1. Browse to http://18.205.188.77/challenges.
