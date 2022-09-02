@@ -5,13 +5,11 @@ title: 'CTF Writeups'
 
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-{% for post in site.categories['ctfwriteups'] %}
-
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-        {% if tag contains "CTF" %}
+        {% if tag contains 'CTF' %}
             {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
         {% endif %}
     {%- endfor -%}
