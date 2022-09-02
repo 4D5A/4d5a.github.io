@@ -14,8 +14,7 @@ after-content: [disclaimer-notice.html]
 
 
 
-### Writeup
-How to Solve the Challenge
+### Solving the Challenge
 1. Browse to http://18.205.188.77/challenges.
 2. Click Rhymes.
 3. Click Rhymes.pdf to download the document.
