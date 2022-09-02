@@ -11,7 +11,7 @@ title: 'Tag Index'
 
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-        {% if tags contains 'CTF' %}
+        {% if tag contains 'CTF' %}
             {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
         {% endif %}
     {%- endfor -%}
