@@ -41,6 +41,7 @@ Now, I need to run the firepwd program and specify the location of the key4.db a
 
 The tools provides us with the flag, BTC{key3.dbPassword}.
 
+<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-fire/btc-2022-last-minute-ctf-fire-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Fire Screenshot' />
 
 ### Solving the Challenge
 1. Run the command mkdir -p ~/CTF/Fire
@@ -56,5 +57,3 @@ The tools provides us with the flag, BTC{key3.dbPassword}.
 11. Copy the flag
 12. Paste the flag into the Flag field.
 13. Click Submit.
-
-<img src="{{ 'assets/img/2022-09-01-btc-2022-last-minute-ctf-fire/btc-2022-last-minute-ctf-fire-screenshot.png' | relative_url }}" alt='BTC 2022 Last Minute CTF Fire Screenshot' />
