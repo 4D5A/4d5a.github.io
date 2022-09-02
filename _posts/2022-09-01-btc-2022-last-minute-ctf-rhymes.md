@@ -7,9 +7,6 @@ categories: [ctfwriteups]
 tags: [BlueTeamCon2022,ctf-forensics]
 after-content: [disclaimer-notice.html]
 ---
-
-## Rhymes
-
 ### Explanation
 In the Rhymes Challenge, you are provided with a PDF. It contains two lines of redacted text. The first line of redacted text is on page 2. The second line of redacted text is on line 4.
 

@@ -7,9 +7,6 @@ categories: [ctfwriteups]
 tags: [BlueTeamCon2022,ctf-forensics]
 after-content: [disclaimer-notice.html]
 ---
-
-## Rhymes
-
 ### Explanation
 In the Naught Challenge, you are given an XLSX document that contains a "redacted" flag. The description for the challenge reads, "The Last Minute CTF has redacted the flag from this document. Please recover it." The use of the word "recover" suggests that perhaps information has been deleted in the file.
 

@@ -7,9 +7,6 @@ categories: [ctfwriteups]
 tags: [BlueTeamCon2022,ctf-forensics]
 after-content: [disclaimer-notice.html]
 ---
-
-## Rhymes
-
 ### Explanation
 In the Fire challenge, we are given the files key4.db and logins.json. These files combined with the name of the challenge being "Fire" is a good hint that we need to crack a firefox password database to obtain the flag.
 
