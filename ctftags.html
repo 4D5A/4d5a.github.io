@@ -11,7 +11,7 @@ title: 'CTF Writeups'
 
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-        {% if tag endswith 'CTF' %}
+        {% if tag contains "CTF" %}
             {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
         {% endif %}
     {%- endfor -%}
