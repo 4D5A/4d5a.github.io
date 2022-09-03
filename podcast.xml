@@ -10,7 +10,6 @@ layout: null
 		<link>{{ site.url }}{{ site.baseurl }}</link>
 		<description>{{ site.description | xml_escape }}</description>
         <language>{{ site.lang }}</language>
-        <spotify:countryOfOrigin>us</spotify:countryOfOrigin>
         <copyright>&#xA9; {{ site.time | date: "%Y" }} {{ site.title }}</copyright>
 		<category>Technology</category>
         <ttl>1440</ttl>
