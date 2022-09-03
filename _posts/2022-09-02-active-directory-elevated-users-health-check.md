@@ -33,6 +33,10 @@ The result is users that are a member of the Protected Users group cannot do the
 * Authenticate using DES or RC4 through Kerberos
 * Renew Kerberos Ticket Granting Tickets for more than the original 4 hours
 
+> Do not enable Protected Users if you have any Windows Server 2003 Domain Contollers in your domain<sup>4</sup>
+
+> To use Protected Users, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>5</sup>
+
 ### Building the Get-ElevatedADUsers Project
 
 ## Project Objectives
@@ -69,6 +73,10 @@ The two optional switches are:
 [2] [https://social.technet.microsoft.com/wiki/contents/articles/22331.adminsdholder-protected-groups-and-security-descriptor-propagator.aspx](https://social.technet.microsoft.com/wiki/contents/articles/22331.adminsdholder-protected-groups-and-security-descriptor-propagator.aspx)
 
 [3] [2022-09-02-active-directory-elevated-users-health-check](2022-09-02-active-directory-elevated-users-health-check)
+
+[4] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
+
+[5] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
 
 
 https://github.com/4D5A/Active-Directory-Tools/blob/main/Security%20Tools/Get-ElevatedADUsers.ps1
