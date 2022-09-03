@@ -12,10 +12,9 @@ I reviewed the configuration of my domain controller and as part of my review, I
 
 After discussing the report with others, and I questioned if the tool was identifying which accounts had elevated privileges by looking at the value of the adminCount attribute on Active Directory User Objects.
 
-When an Active Directory Object is added to Protected Active Directory group<sup>1</sup> (these are different from the Protected Users Security Group), a few things take place. One of the updates to the Active Directory Object that is a member of a protected Active Directory group, is the value of the object's adminCount attribute is updated from <NOT SET> ($null) to "1".<sup>2</sup> A value of "1" for the adminCount attribute, indicates the Active Directory Object currently or previously had elevated privileges as a reulst of being a member of a protected Active Directory group.
+When an Active Directory Object is added to Protected Active Directory group<sup>1</sup> (these are different from the Protected Users Security Group), a few things take place. One of the updates to the Active Directory Object that is a member of a protected Active Directory group, is the value of the object's adminCount attribute is updated from ```<NOT SET>``` or ```($null)``` to ```1```.<sup>2</sup> A value of "1" for the adminCount attribute, indicates the Active Directory Object currently or previously had elevated privileges as a reulst of being a member of a protected Active Directory group.
 
-> [!NOTE]
-> If you remove an Active Directory object from all protected Active Directory groups, SDPROP does not reset the value of the adminCount Active Directory attribute to "0" or <NOT SET>
+> If you remove an Active Directory object from all protected Active Directory groups, SDProp does not reset the value of the adminCount Active Directory attribute to "0" or <NOT SET>
 
 
 
