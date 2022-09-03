@@ -54,11 +54,13 @@ This script is written in PowerShell and requires the ActiveDirectory module. It
 The script has two optional parameters.
 
 1. ```$ReportLocation``` - If this parameter is not specified, the value for ```$ReportLocation``` will be set to ```"$env:USERPROFILE\Desktop\"```.
+
 2. ```$File``` - If this paramter is not specified, the value for ```$File``` will be set to ```"Get-ElevatedADUsers_Report_$(Get-Date -Format ddMMyyyy_HHMMss).txt"```.
 
 The two optional switches are:
 
 1. ```-IncludeDisabled``` - This sets the variable ```$ElevatedUsers``` to ```"Get-ADUser -Filter {(adminCount -ne 0)}"```.
+
 2. ```-LookCool``` - I added this becase the switch ```-Verbose``` is reserved by PowerShell v2.
 
 
