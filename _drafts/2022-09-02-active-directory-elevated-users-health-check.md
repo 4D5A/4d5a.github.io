@@ -82,3 +82,7 @@ The two optional switches are:
 
 
 https://github.com/4D5A/Active-Directory-Tools/blob/main/Security%20Tools/Get-ElevatedADUsers.ps1
+
+https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/credentials-protection-and-management
+
+https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group
