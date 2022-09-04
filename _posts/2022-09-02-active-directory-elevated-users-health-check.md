@@ -87,6 +87,19 @@ This does not account for an Active Directory user object that is a transient me
         ```}```
     ```}```
 
+An open issue is dealing with an Active Directory user object which is both a member of a particular elevated group directly and through nested group membership. The code ```If (Get-ADUser -Filter "memberOf -RecursiveMatch '$((Get-ADGroup "Domain Admins").DistinguishedName)'" -SearchBase ((Get-ADUser -Identity $ElevatedUser)DistinguishedName)){``` returns Active Directory user objects with direct or nested group membership in the "Domain Admins" group. Earlier in the script, the code ```If (((Get-ADUser -Identity $ElevatedUser -Properties memberOf).memberOf) -like "*Domain Admins*"){```
+        ```$MembershipinElevatedGroups += "Domain Admins"```
+    ```}```.
+That code returns Active Directory user objects which are a direct member of the "Domain Admins" group.
+
+To address that, I added the code ```If ($MembershipinElevatedGroups -notcontains "Domain Admins"){```
+            ```$MembershipinElevatedNestedGroups += "Domain Admins"```
+        ```}```.
+
+That evalutes if the Active Directory user object is a direct member of the "Domain Admins" group. If "Domain Admins" is already in the ```$MembershipinElevatedGroups``` array, then it is not also added to the ```$MembershipinElevatedNestedGroups``` array. That does not mean an Active Directory user object could not be both a member of a particular elevated group directly and through nested group membership.
+
+> If you find an Active Directory user object which is a member of an elevated group directly that should not be, after you remove the object from the elevated group, you should run this script again to determine if the Active Directory user object is also a member of the elevated group through nested group membership.
+
 
 
 
