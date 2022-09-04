@@ -51,7 +51,7 @@ My objective of this project were:
 * Identify if the user object is a member of the Protected Users group
 
 #### Get-ElevatedADUsers.ps1
-This script is written in PowerShell and requires the ActiveDirectory module. It is designed to be run from a domain joined Privileged Workstation.
+This script is written in PowerShell and requires the ActiveDirectory module. It is designed to be run from a domain joined Privileged Workstation or other domain joined computer that has RSAT installed.
 
 The script has two optional parameters.
 
