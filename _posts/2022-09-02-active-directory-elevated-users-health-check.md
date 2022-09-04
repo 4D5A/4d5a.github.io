@@ -102,7 +102,8 @@ That evalutes if the Active Directory user object is a direct member of the "Dom
 
 > If you find an Active Directory user object which is a member of an elevated group directly that should not be, after you remove the object from the elevated group, you should run this script again to determine if the Active Directory user object is also a member of the elevated group through nested group membership.
 
-
+##### Download Get-ADElevatedUsers
+Get-ElevatedADUsers is available in my [4D5A / Active Directory Tools repository](https://github.com/4D5A/Active-Directory-Tools).
 
 
 
