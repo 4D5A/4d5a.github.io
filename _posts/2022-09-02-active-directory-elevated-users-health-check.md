@@ -33,9 +33,11 @@ The result is users that are a member of the Protected Users group cannot do the
 * Authenticate using DES or RC4 through Kerberos
 * Renew Kerberos Ticket Granting Tickets for more than the original 4 hours
 
-> Do not enable Protected Users if you have any Windows Server 2003 Domain Contollers in your domain<sup>5</sup>
+> Do not enable the Protected Users security group if you have any Windows Server 2003 Domain Contollers in your domain<sup>5</sup>
 
-> To use Protected Users, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>6</sup>
+> To use the Protected Users security group, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>6</sup>
+
+> Microsoft provides several warnings about adding an Active Directory object to the Protected Users security group. For example, Active Directory accounts for services and computers should not be added to the Protected Users security group. There are other considerations that may apply to your environment. Please refer to [Credentials Protection and Management](https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/credentials-protection-and-management) and [Protected Users Security Group](https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group) for important information on how the Protected Users security group works, what it will change, when you should not add an Active Directory object to it, and other information.
 
 ### Building the Get-ElevatedADUsers Project
 
@@ -118,10 +120,3 @@ That evalutes if the Active Directory user object is a direct member of the "Dom
 [5] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
 
 [6] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
-
-
-https://github.com/4D5A/Active-Directory-Tools/blob/main/Security%20Tools/Get-ElevatedADUsers.ps1
-
-https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/credentials-protection-and-management
-
-https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/protected-users-security-group
