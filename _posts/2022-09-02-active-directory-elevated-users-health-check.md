@@ -42,7 +42,7 @@ The result is users that are a member of the Protected Users group cannot do the
 ### Building the Get-ElevatedADUsers Project
 
 #### Project Objectives
-My objective of this project were:
+My objectives for this project were:
 
 * Identify the Active Directory user objects that have an adminCount attribute other than ```0``` or ```<NOT SET>```
 * Identify the Active Directory user objects that are currently a member of a Protected Group
