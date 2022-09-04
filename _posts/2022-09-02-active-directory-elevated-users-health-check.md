@@ -4,7 +4,7 @@ title: Active Directory Elevated Users Health Check
 gh-repo: 4D5A/Active-Directory-Tools
 gh-badge: [follow, star]
 categories: [blog]
-tags: [Active Directory]
+tags: [Active Directory, Active-Directory-Tools]
 after-content: [disclaimer-notice.html]
 ---
 ### Introduction
