@@ -102,14 +102,10 @@ That evalutes if the Active Directory user object is a direct member of the "Dom
 
 > If you find an Active Directory user object which is a member of an elevated group directly that should not be, after you remove the object from the elevated group, you should run this script again to determine if the Active Directory user object is also a member of the elevated group through nested group membership.
 
-##### Download Get-ADElevatedUsers
-Get-ElevatedADUsers is available in my [4D5A / Active Directory Tools repository](https://github.com/4D5A/Active-Directory-Tools).
+##### Download Get-ElevatedADUsers
+Click [Get-ElevatedADUsers](https://github.com/4D5A/Active-Directory-Tools/blob/main/Security%20Tools/Get-ElevatedADUsers.ps1) to download Get-ElevatedADUsers.
 
-
-
-
-
-
+### Footnotes
 [1] [https://devblogs.microsoft.com/scripting/powertip-use-powershell-to-find-if-user-is-nested-group-member/](https://devblogs.microsoft.com/scripting/powertip-use-powershell-to-find-if-user-is-nested-group-member/)
 
 [2] [https://social.technet.microsoft.com/wiki/contents/articles/22331.adminsdholder-protected-groups-and-security-descriptor-propagator.aspx](https://social.technet.microsoft.com/wiki/contents/articles/22331.adminsdholder-protected-groups-and-security-descriptor-propagator.aspx)
