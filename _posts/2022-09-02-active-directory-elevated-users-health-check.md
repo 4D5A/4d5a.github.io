@@ -33,7 +33,7 @@ The result is users that are a member of the Protected Users group cannot do the
 * Authenticate using DES or RC4 through Kerberos
 * Renew Kerberos Ticket Granting Tickets for more than the original 4 hours
 
-> Do not enable the Protected Users security group if you have any Windows Server 2003 Domain Contollers in your domain<sup>5</sup>
+> Do not enable the Protected Users security group if you have any Windows Server 2003 Domain Controllers in your domain<sup>5</sup>
 
 > To use the Protected Users security group, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>6</sup>
 
@@ -51,7 +51,7 @@ My objective of this project were:
 * Identify if the user object is a member of the Protected Users group
 
 #### Get-ElevatedADUsers.ps1
-This script is written in PowerShell and requires the ActiveDirectory module. It is designed to be run as a elevated user on a Domain Controller.
+This script is written in PowerShell and requires the ActiveDirectory module. It is designed to be run from a domain joined Privileged Workstation.
 
 The script has two optional parameters.
 
