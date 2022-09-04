@@ -17,7 +17,7 @@ When an Active Directory Object is added to Protected Active Directory group<sup
 
 > If you remove an Active Directory object from all protected Active Directory groups, SDProp does not reset the value of the adminCount Active Directory attribute to ```0``` or ```<NOT SET>```.<sup>3</sup>
 
-This can lead to reports created by automated security tools identifying Active Directory objects as having elevated privileges when they actually do not. If an Active Directory object was previously added to the "Domain Admins" security group, but was later removed from that security group, it would still have an adminCount attribute value of ```1``` because SDProp does not reset the value of the adminCount attribute when an Active Directory object is removed from a protected group.
+This can lead to reports created by automated security tools identifying Active Directory objects as having elevated privileges when they actually do not. If an Active Directory object was previously added to the "Domain Admins" security group, but was later removed from that security group, it would still have an adminCount attribute value of ```1``` because SDProp does not reset the value of the adminCount attribute when an Active Directory object is removed from a protected group.<sup>4</sup>
 
 ### What is the Protected Users group?
 If an Active Directory user object is an elevated user and that is what you need it to be, you should consider adding it to the Protected Users group if it isn't. Users that are a member of the Protected Users group receive additional security protections including:
@@ -33,13 +33,13 @@ The result is users that are a member of the Protected Users group cannot do the
 * Authenticate using DES or RC4 through Kerberos
 * Renew Kerberos Ticket Granting Tickets for more than the original 4 hours
 
-> Do not enable Protected Users if you have any Windows Server 2003 Domain Contollers in your domain<sup>4</sup>
+> Do not enable Protected Users if you have any Windows Server 2003 Domain Contollers in your domain<sup>5</sup>
 
-> To use Protected Users, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>5</sup>
+> To use Protected Users, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>6</sup>
 
-#### Building the Get-ElevatedADUsers Project
+### Building the Get-ElevatedADUsers Project
 
-### Project Objectives
+#### Project Objectives
 My objective of this project were:
 
 * Identify the Active Directory user objects that have an adminCount attribute other than ```0``` or ```<NOT SET>```
@@ -48,7 +48,7 @@ My objective of this project were:
 * Identify the Protected Groups the Active Directory user object is a transitive member of
 * Identify if the user object is a member of the Protected Users group
 
-### Get-ElevatedADUsers.ps1
+#### Get-ElevatedADUsers.ps1
 This script is written in PowerShell and requires the ActiveDirectory module. It is designed to be run as a elevated user on a Domain Controller.
 
 The script has two optional parameters.
@@ -63,8 +63,9 @@ The two optional switches are:
 
 2. ```-LookCool``` - I added this becase the switch ```-Verbose``` is reserved by PowerShell v2.
 
-#### Examples
+> If the optional switch ```-IncludeDisabled``` is omitted, the variable ```$ElevatedUsers``` is set to ```Get-ADUser -Filter {(Enabled -eq "true") -and (adminCount -ne 0)}```.
 
+##### Examples
 ```Get-ElevatedADUsers.ps1```
 
 ```Get-ElevatedADUsers.ps1 -IncludeDisabled```
@@ -72,10 +73,23 @@ The two optional switches are:
 ```Get-ElevatedADUsers.ps1 -LookCool```
 
 ##### Seeing if an Active Directory user object is a member of a protected group
+As an Active Directory user object can be a member of more than one protected group, I used an array ```$MembershipinElevatedGroups``` to note the protected groups an Active Directory user object is a member of. The code below adds "Enterprise Admins" to the ```$MembershipinElevatedGroups``` array if the Active Directory user object is a direct member of the "Enterprise Admins" group.
 
 ```If (((Get-ADUser -Identity $ElevatedUser -Properties memberOf).memberOf) -like "*Enterprise Admins*"){```
         ```$MembershipinElevatedGroups += "Enterprise Admins"```
     ```}```
+
+This does not account for an Active Directory user object that is a transient member of a elevated group. Suppose an Active Directory user object is not a member of "Domain Admins" but is a member of "Helpdesk", and that "Helpdesk" is a member of "Domain Admins", I wanted the script to identify the Active Directory user object that is a member of "Helpdesk" since that group is a member of the "Domain Admins" group, which provides the Active Directory user object with elevated privileges. I came across the article, ["PowerTip: User PowerShell to Find if User Is Nested Group Member"](https://devblogs.microsoft.com/scripting/powertip-use-powershell-to-find-if-user-is-nested-group-member/) by Microsoft and was able to learn what I needed to identify the Active Directory user object that is a member of an Active Directory security group and the group is a member of a protected group (e.g. the Active Directory user object is a member of the "Helpdesk" group and the "Helpdesk" group is a member of the "Domain Admins" group). I created another array, this time one named ```$MembershipinElevatedNestedGroups``` to note the protected groups an Active Directory user object is a nested member of. The code below adds "Domain Admins" to the ```$MembershipinElevatedNestedGroups``` array if the Active Directory user object is a nested member of the "Domain Admins" group.
+
+```If (Get-ADUser -Filter "memberOf -RecursiveMatch '$((Get-ADGroup "Domain Admins").DistinguishedName)'" -SearchBase ((Get-ADUser -Identity $ElevatedUser)DistinguishedName)){```
+        ```If ($MembershipinElevatedGroups -notcontains "Domain Admins"){```
+            ```$MembershipinElevatedNestedGroups += "Domain Admins"```
+        ```}```
+    ```}```
+
+
+
+
 
 
 
@@ -86,9 +100,11 @@ The two optional switches are:
 
 [3] [2022-09-02-active-directory-elevated-users-health-check](2022-09-02-active-directory-elevated-users-health-check)
 
-[4] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
+[4] [2022-09-02-active-directory-elevated-users-health-check](2022-09-02-active-directory-elevated-users-health-check)
 
 [5] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
+
+[6] [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts#BKMK_Prereq)
 
 
 https://github.com/4D5A/Active-Directory-Tools/blob/main/Security%20Tools/Get-ElevatedADUsers.ps1
