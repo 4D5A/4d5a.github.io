@@ -37,9 +37,9 @@ The result is users that are a member of the Protected Users group cannot do the
 
 > To use Protected Users, you need to have your Primary Domain Controller Emulator Role running on a server that is Windows Server 2012 R2 or higher<sup>5</sup>
 
-### Building the Get-ElevatedADUsers Project
+#### Building the Get-ElevatedADUsers Project
 
-## Project Objectives
+### Project Objectives
 My objective of this project were:
 
 * Identify the Active Directory user objects that have an adminCount attribute other than ```0``` or ```<NOT SET>```
@@ -48,7 +48,7 @@ My objective of this project were:
 * Identify the Protected Groups the Active Directory user object is a transitive member of
 * Identify if the user object is a member of the Protected Users group
 
-## Get-ElevatedADUsers.ps1
+### Get-ElevatedADUsers.ps1
 This script is written in PowerShell and requires the ActiveDirectory module. It is designed to be run as a elevated user on a Domain Controller.
 
 The script has two optional parameters.
@@ -63,9 +63,19 @@ The two optional switches are:
 
 2. ```-LookCool``` - I added this becase the switch ```-Verbose``` is reserved by PowerShell v2.
 
+#### Examples
 
+```Get-ElevatedADUsers.ps1```
 
+```Get-ElevatedADUsers.ps1 -IncludeDisabled```
 
+```Get-ElevatedADUsers.ps1 -LookCool```
+
+##### Seeing if an Active Directory user object is a member of a protected group
+
+```If (((Get-ADUser -Identity $ElevatedUser -Properties memberOf).memberOf) -like "*Enterprise Admins*"){```
+        ```$MembershipinElevatedGroups += "Enterprise Admins"```
+    ```}```
 
 
 
