@@ -27,4 +27,4 @@ Exploit a vulnerable PHP file upload page to view the contents of /flag.txt.
 9. Open a new tab.
 10. Browse to the URI for the profile picture.
 
-<img src="{{ 'assets/img/2022-09-15-antisyphon-flash-ctf3-2022-just-my-kind-of-type/antisyphon-flash-ctf3-2022-just-my-kind-of-type-screenshot.png' | relative_url }}" alt='Antisyphon Flash CTF #3 2022 Just My Kind of Type Screenshot' />
+<img src="{{ 'assets/img/2022-09-14-antisyphon-flash-ctf3-2022-just-my-kind-of-type/antisyphon-flash-ctf3-2022-just-my-kind-of-type-screenshot.png' | relative_url }}" alt='Antisyphon Flash CTF #3 2022 Just My Kind of Type Screenshot' />
