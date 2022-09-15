@@ -16,9 +16,9 @@ Exploit a vulnerable PHP file upload page to view the contents of /flag.txt.
 3. The upload also appears to restrict the length of the file.
 4. I opened a PNG file and removed the information except for the header and the size information, then added the PHP code to output the contents of /flag.txt:
 
-```<?php```
-```echo file_get_contents( "/flag.txt" );```
-```?>```
+    ```<?php```
+    ```echo file_get_contents( "/flag.txt" );```
+    ```?>```
 
 5. Upload the file.
 6. Visit the profile page.
