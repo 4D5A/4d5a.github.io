@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Antisyphon Flash CTF 3 - Dauntless Defacement
+title: Antisyphon Flash CTF 3 - Just My Kind of Type
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]
-tags: [Antisyphon-Flash-CTF3,ctf-forensics]
+tags: [Antisyphon-Flash-CTF3,ctf-web-exploitation]
 after-content: [disclaimer-notice.html]
 ---
 ### Explanation
@@ -27,4 +27,4 @@ Exploit a vulnerable PHP file upload page to view the contents of /flag.txt.
 9. Open a new tab.
 10. Browse to the URI for the profile picture.
 
-<img src="{{ '\assets\img\2022-09-15-antisyphon-flash-ctf3-2022-just-my-kind-of-type\antisyphon-flash-ctf3-2022-just-my-kind-of-type-screenshot.png' | relative_url }}" alt='Antisyphon Flash CTF #3 2022 Just My Kind of Type Screenshot' />
+<img src="{{ 'assets\img\2022-09-15-antisyphon-flash-ctf3-2022-just-my-kind-of-type\antisyphon-flash-ctf3-2022-just-my-kind-of-type-screenshot.png' | relative_url }}" alt='Antisyphon Flash CTF #3 2022 Just My Kind of Type Screenshot' />
