@@ -18,6 +18,6 @@ subtitle:
 
 SOC Manager, Blue Team, Sometimes Red Team, Infosec, DFIR. Posts are my own.
 
-- 🔭 I’m currently working on Active Directory, Azure Active Directory, Microsoft 365, Migrating from on-premises domain joined to hybrid azure active directory domain joined
-- 🌱 I’m currently learning Microsoft Intune, Microsoft Graph SDK, Microsoft Endpoint Manager, and Git
+- 🔭 I’m currently working on Azure Active Directory, Microsoft 365, Migrating from on-premises domain joined to hybrid azure active directory domain joined, Microsoft Defender for Endpoint, and Active Directory
+- 🌱 I’m currently learning Microsoft Endpoint Manager, Microsoft Graph SDK, and Git
 - 😄 Pronouns: he/his/him
