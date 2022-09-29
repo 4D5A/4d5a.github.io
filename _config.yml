@@ -24,7 +24,7 @@ navbar-links:
   About Me: "aboutme"
   CTF Writeups: "ctfwriteups"
 #  Presentations: "presentations"
-#  Projects: "projects"
+  Projects: "projects"
 
 
 ################
