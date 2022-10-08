@@ -7,3 +7,4 @@ categories: [projects]
 tags: [DNS, Network-Administration-Tools]
 after-content: [disclaimer-notice.html]
 ---
+Invoke-DNSQuery
