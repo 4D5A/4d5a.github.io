@@ -8,7 +8,10 @@ layout: page
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
-  {% for post in site.categories contains "blog" and site.categories contains "projects" %}
+  {% assign category_blog = site.categories['blog'] %}
+  {% assign category_projects = site.categories['projects'] %}
+  {% assign categories_are_blog_and_projects =  category_blog | concat: category_projects %}
+  {% for post in categories_are_blog_and_projects %}
     <li class="post-preview">
       <article>
 
