@@ -1,17 +1,18 @@
 ---
 layout: page
-pagination:
-  enabled: true
-  category: blog, projects
 ---
 
 {{ content }}
 
 {% assign posts = paginator.posts | default: site.posts %}
 
+{% assign fruits = "blog" | split: ", " %}
+{% assign vegetables = "projects" | split: ", " %}
+{% assign home-posts = fruits | concat: vegetables %}
+
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
-  {% for post in posts %}
+  {% for post in home-posts %}
     <li class="post-preview">
       <article>
 
