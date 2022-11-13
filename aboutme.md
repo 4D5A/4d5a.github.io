@@ -7,7 +7,7 @@ subtitle:
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=4D5A&show_icons=true&theme=dark" width="380">
 
 [![GitHub recordedparadox](https://img.shields.io/github/followers/4D5A?label=Follow&style=social)](https://github.com/4D5A)
-![Mastodon](https://img.shields.io/mastodon/follow/109299763334110460?domain=https%3A%2F%2Finfosec.exchange&style=social)
+![Mastodon](https://img.shields.io/mastodon/follow/109299763334110460?domain=https%3A%2F%2Finfosec.exchange&style=social)(https://www.cnn.com)
 
 <!-- ![Twitter](https://img.shields.io/twitter/follow/recordedparadox?style=social) -->
 
