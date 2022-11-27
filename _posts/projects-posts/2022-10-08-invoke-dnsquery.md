@@ -12,8 +12,8 @@ Many Network Administrators and Systems Administrators frequently respond to que
 
 If SPF and DKIM are not familiar to you, the resources below provide more details for each.
 
--[Configuring sender policy framework in Exchange Online](https://4d5a.github.io/2022-04-23-configuring-sender-policy-framework-in-exchange-online/)
--[How to configure DKIM in Microsoft 365](https://4d5a.github.io/2022-04-23-how-to-configure-dkim-in-microsoft-365/)
+- [Configuring sender policy framework in Exchange Online](https://4d5a.github.io/2022-04-23-configuring-sender-policy-framework-in-exchange-online/)
+- [How to configure DKIM in Microsoft 365](https://4d5a.github.io/2022-04-23-how-to-configure-dkim-in-microsoft-365/)
 
 For a technical description of SPF including a discussion of RFC 7208, you may consider reviewing [Blocking spoofed emails](https://4d5a.github.io/2021-12-11-blocking-spoofed-emails/).
 
