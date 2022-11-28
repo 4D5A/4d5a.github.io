@@ -33,6 +33,23 @@ Here is a table of strings which may be located in MX records and matching email
 | secureserver.net | GoDaddy |
 | aspmx.l.google.com | Google |
 
+PowerShell includes the ```Resolve-DnsName``` cmdlet which provides you with the ability to query DNS records. Unlike the output obtanied from ```nslookup```, ```Resolve-DnsName``` produces object-oriented output, which in turn makes assigning a specific portion of a DNS query result as a variable. Microsoft's documentation for the ```Resolve-DnsName``` cmdlet is accessible at [https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname).
 
+An example of using the ```Resolve-DnsName``` cmdlet might be querying Google's Public DNS server 8.8.8.8 for the MX records of google.com.
+
+```Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd```
+
+The example query returns the below object.
+
+| Name | Type | TTL | Section | NameExchange | Preference |
+| google.com | MX | 201 | Answer | smtp.google.com | 10 |
+
+Since the ```Resolve-DnsName``` cmdlet is object-oriented, assigning the output of the query to a variable is staightforward.
+
+```$var = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd```
+
+Now that I assigned a variable to the object, I can use the usual PowerShell commands to include Select-Object and Where-Object to get the specific object properties and assign a variable to them.
+
+```$MailExchangerRecord = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd | Select-Object NameExchange -ExpandProperty```
 
 ### Footnotes
