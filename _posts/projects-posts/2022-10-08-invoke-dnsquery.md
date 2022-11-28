@@ -116,3 +116,4 @@ This script has two optional switches.
 Click [Invoke-DNSQuery](https://github.com/4D5A/Networks-Administration/blob/main/Invoke-DNSQuery/Invoke-DNSQuery.ps1) to download Invoke-DNSQuery.
 
 ### Footnotes
+[1] [https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname)
