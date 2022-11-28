@@ -96,7 +96,7 @@ share-links-active:
   facebook: false
   linkedin: false
   mastodon: true
-  reddit: false
+  reddit: true
   vk: false
 
 # How to display the link to your website in the footer
