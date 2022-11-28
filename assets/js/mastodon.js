@@ -93,12 +93,12 @@ function msbSetCookie(name, value, days) {
       /**
        * Add text button... or not
        */
-      if (msbConfig && (msbConfig.buttonDisplayText || msbConfig.buttonDisplayText === undefined)) {
-        buttonText = !!msbText ? document.createTextNode(msbText) : document.createTextNode(msbI18n())
-      }
-      else {
-        buttonText = document.createTextNode('')
-      }
+      // if (msbConfig && (msbConfig.buttonDisplayText || msbConfig.buttonDisplayText === undefined)) {
+      //  buttonText = !!msbText ? document.createTextNode(msbText) : document.createTextNode(msbI18n())
+      //}
+      //else {
+      //  buttonText = document.createTextNode('')
+      //}
 
       
       if (msbButtonStyle) {
