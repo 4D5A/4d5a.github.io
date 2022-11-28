@@ -51,12 +51,11 @@
   {% endif %}
 
   {% if site.share-links-active.mastodon %}
-    <mastodon-share-button share_message="Text to share" class="hydrated"></mastodon-share-button>
-    <a href="https://infosec.exchange/share?text=Read {{ post.title | strip_html } at {{ page.url | absolute_url | url_encode }}"
-    class="btn btn-social-icon btn-mastodon" title="Share on Mastodon">
-    <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
-    <span class="sr-only">Mastodon</span>
-  </a>
+    <a href="https://infosec.exchange/share?text={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-mastodon" title="Share on Mastodon">
+      <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
+      <span class="sr-only">Mastodon</span>
+    </a>
 {% endif %}
 
 </section>
