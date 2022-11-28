@@ -51,8 +51,14 @@
   {% endif %}
 
   {% if site.share-links-active.mastodon %}
-    <div class="mastodon-share-button" data-target="{{ page.url | absolute_url | url_encode }}" data-name="infosec.exchange" data-buttonstyle="btn btn-secondary" data-text="Share on Mastodon">
-    <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
+  <div
+  class="mastodon-share-button"
+  data-target="https://aly-ve.github.io/Mastodon-share-button/"
+  data-name="Test of #MSB"
+  data-buttonstyle="btn btn-primary"
+  data-text="Share on Mastodon"
+  ></div>
+  <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
     <span class="sr-only">Mastodon</span>
   {% endif %}
 
