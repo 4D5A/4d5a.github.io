@@ -74,11 +74,10 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 
 ```$SPFRecordCount = (Resolve-DnsName -Name $DomainName -Type TXT -Server $DnsIp -DnssecCd | Where-Object -Property Strings -match -Value "spf1").count```
 
-This checks if the domain name does not have an SPF record.
+##### Using TXT records to check for missing or misconfigured DMARC records
 
-<pre> If ($SPFRecordCount -eq 0) {
-        $SPFRecord = "MISCONFIGURATION: No SPF record."
-    }</pre>
+```$DMARCRecordCount = (Resolve-DnsName -Name _dmarc.$DomainName -Type TXT -Server $DnsIp -DnssecCd | Where-Object -Property Name -match -Value "_dmarc.$DomainName").count```
+
 
 
 ### Footnotes
