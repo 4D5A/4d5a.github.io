@@ -51,13 +51,13 @@
   {% endif %}
 
   {% if site.share-links-active.mastodon %}
-  <div
+  <span
   class="mastodon-share-button"
   data-target="{{ page.url | absolute_url | url_encode }}"
   data-name=""
   data-buttonstyle="btn btn-social-icon btn-mastodon"
   data-text=""
-  ></div>
+  ></span>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
