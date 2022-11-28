@@ -87,10 +87,28 @@ This script has one required parameter.
 
 The script has three optional parameters.
 
-1. ```$ReportLocation``` - If this parameter is not specified, the value for ```$ReportLocation``` will be set to ```"$env:USERPROFILE\Desktop\"```.
+1. ```$ReportLocation``` - If this optional parameter is not specified, the value for ```$ReportLocation``` will be set to ```"$env:USERPROFILE\Desktop\"```.
 
-2. ```$File``` - If this paramter is not specified, the value for ```$File``` will be set to ```"DNS_Report-$DomainNames-$(Get-Date -Format ddMMyyyy_HHmmss).csv"```.
+2. ```$File``` - If this optional paramter is not specified, the value for ```$File``` will be set to ```"DNS_Report-$DomainNames-$(Get-Date -Format ddMMyyyy_HHmmss).csv"```.
 
-3. ```$DnsIp``` - If this parameter is not specified, the value for ```$DnsIp``` will be set to ```"8.8.8.8"```.
+3. ```$DnsIp``` - If this optional parameter is not specified, the value for ```$DnsIp``` will be set to ```"8.8.8.8"```.
+
+This script has two optional switches.
+
+1. ```$Csv``` - If this optional switch is specified, results are sent to the console and a csv file.
+
+2. ```$details``` -  If this parameter is not specified, the object's DomainName, MailExchangerDNSRecord, EmailFilter, SPFMode, and DMARCMode properties are displayed in the console. If this parameter is specified, all of the object's properties are displayed in the console. If the Csv parameter is specified, all of the object's properties are sent to the csv file.
+
+### Examples
+
+```Invoke-DNSQuery.ps1 -DomainNames example.org```
+
+```Invoke-DNSQuery.ps1 -DomainNames example.org, example.com```
+
+```Invoke-DNSQuery.ps1 -DomainNames example.org -Csv -ReportLocation C:\ -File invoke-dnsquery-results.csv```
+
+```Invoke-DNSQuery.ps1 -DomainNames example.org -details```
+
+```Invoke-DNSQuery.ps1 -DomainNames example.org -Csv -ReportLocation C:\ -File invoke-dnsquery-results.csv -details```
 
 ### Footnotes
