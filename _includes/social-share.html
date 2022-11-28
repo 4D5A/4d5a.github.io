@@ -60,6 +60,24 @@
   ></div>
   <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
     <span class="sr-only">Mastodon</span>
+    <script>
+      const msbConfig = {
+        openModal: function () {
+          $('#exampleModal').modal('show');
+        },
+        closeModal: function () {
+          $('#exampleModal').modal('hide');
+        },
+        addressFieldSelector: '#msb-address',
+        buttonModalSelector: '#msb-share',
+        memorizeFieldId: 'msb-memorize-instance',
+        buttonIconHtml: '<i class="fa fa-mastodon" aria-hidden="true"></i>'
+      };
+  
+      $('.modal').on('shown.bs.modal', function() {
+        $('#msb-address').focus();
+      });
+    </script>
   {% endif %}
 
 </section>
