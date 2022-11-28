@@ -51,6 +51,7 @@
   {% endif %}
 
   {% if site.share-links-active.mastodon %}
+  <div class="overlay" id="modal"><div class="modal-window"><div class="modal-window__content"><slot><button class="close-modal">Close</button><br><h2 class="modal-title">Share to Mastodon</h2><form><select class="form-style"><option value="https://infosec.exchange">https://infosec.exchange</option><option value="other_instance">Other instance</option></select><br><br><input type="submit" value="Send" class="send-button"></form></slot></div></div></div>
   <a href="https://infosec.exchange/share?text=Read {{ post.title | strip_html } at {{ page.url | absolute_url | url_encode }}"
     class="btn btn-social-icon btn-mastodon" title="Share on Mastodon">
     <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
