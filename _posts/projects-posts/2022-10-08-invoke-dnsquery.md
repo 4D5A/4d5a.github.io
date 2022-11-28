@@ -46,10 +46,35 @@ The example query returns the below object.
 
 Since the ```Resolve-DnsName``` cmdlet is object-oriented, assigning the output of the query to a variable is staightforward.
 
-```$var = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd```
+```$DNSRecord = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd```
 
 Now that I assigned a variable to the object, I can use the usual PowerShell commands to include Select-Object and Where-Object to get the specific object properties and assign a variable to them.
 
-```$MailExchangerRecord = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd | Select-Object NameExchange -ExpandProperty```
+```$DNSRecord = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd | Select-Object NameExchange -ExpandProperty```
+
+If you copy and paste the code above in PowerShell and then type ```$MailExchangeRecord```, you will receive the below output.
+
+```smtp.google.com```
+
+Since most domain names have multiple DNS records for failover, I decided to focus on the primary MX record for the domain name by sorting the output by the object property ```Preference``` in descending order and then using Select-Object to select the last entry which will produce the MX record for the domain name with the object property ```Preference``` that has the lowest value.
+
+```$DNSRecord = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd | Sort-Object -Property Preference -Descending | Select-Object -Last 1 | Select-Object -ExpandProperty NameExchange```
+
+#### Using TXT records to detect missing or misconfigured SPF and DMARC records
+There are common misconfigurations of SPF and DMARC records which we can use to TXT records to test for.
+
+##### Using TXT records to detect missing or misconfigured SPF records
+Two common SPF record problems are there not being one or there being more than one. If the domain name does not have an SPF record, destination spam filters may block emails from that domain name. If the domain name has multiple SPF records, when the destination spam filter receives the email from that domain name, the destination spam filter will request the SPF record for the domain name and the DNS server will provide the value of one of the SPF records. If those records are different (and one of the records is wrong), some emails from the sending domain will pass the SPF check of the spam filter and others will fail. This presents itself as emails from a given domain name sporadically being blocked.
+
+We are able to use ```Resolve-DNSName``` to obtain SPF records for a domain name.
+
+```$SPFDetails = Resolve-DnsName -Name $DomainName -Type TXT -Server $DnsIp -DnssecCd | Where-Object -Property Strings -match -Value "spf1"```
+
+I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the example variable above to check if a domain name does not have an SPF record, but because I also plan on checking if there are multiple SPF records, I decided to count the number of SPF records.
+
+```$SPFRecordCount = (Resolve-DnsName -Name $DomainName -Type TXT -Server $DnsIp -DnssecCd | Where-Object -Property Strings -match -Value "spf1").count```
+
+
+
 
 ### Footnotes
