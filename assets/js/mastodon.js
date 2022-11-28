@@ -97,7 +97,7 @@ function msbSetCookie(name, value, days) {
       //  buttonText = !!msbText ? document.createTextNode(msbText) : document.createTextNode(msbI18n())
       //}
       //else {
-      //  buttonText = document.createTextNode('')
+        buttonText = document.createTextNode('')
       //}
 
       
