@@ -76,9 +76,9 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 
 This checks if the domain name does not have an SPF record.
 
-``` If ($SPFRecordCount -eq 0) {```
-        ```$SPFRecord = "MISCONFIGURATION: No SPF record."```
-    ```}```
+<pre> If ($SPFRecordCount -eq 0) {
+        $SPFRecord = "MISCONFIGURATION: No SPF record."
+    }</pre>
 
 
 ### Footnotes
