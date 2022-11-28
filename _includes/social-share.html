@@ -51,7 +51,7 @@
   {% endif %}
 
   {% if site.share-links-active.mastodon %}
-  <a href="https://infosec.exchange/share?text=Try this article at {{ page.url | absolute_url | url_encode }}"
+  <a href="https://infosec.exchange/share?text=Read {{ post.title }} at {{ page.url | absolute_url | url_encode }}"
     class="btn btn-social-icon btn-mastodon" title="Share on Mastodon">
     <span class="fab fa-fw fa-mastodon" aria-hidden="true"></span>
     <span class="sr-only">Mastodon</span>
