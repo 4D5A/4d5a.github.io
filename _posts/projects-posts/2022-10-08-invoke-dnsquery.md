@@ -111,4 +111,8 @@ This script has two optional switches.
 
 ```Invoke-DNSQuery.ps1 -DomainNames example.org -Csv -ReportLocation C:\ -File invoke-dnsquery-results.csv -details```
 
+### Download Invoke-DNSQuery
+
+Click [Invoke-DNSQuery](https://github.com/4D5A/Networks-Administration/blob/main/Invoke-DNSQuery/Invoke-DNSQuery.ps1) to download Invoke-DNSQuery.
+
 ### Footnotes
