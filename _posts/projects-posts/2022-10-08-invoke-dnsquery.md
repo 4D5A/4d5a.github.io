@@ -78,6 +78,19 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 
 ```$DMARCRecordCount = (Resolve-DnsName -Name _dmarc.$DomainName -Type TXT -Server $DnsIp -DnssecCd | Where-Object -Property Name -match -Value "_dmarc.$DomainName").count```
 
+### Invoke-DNSQuery
+This script is written in PowerShell. It does not require additional modules. It does not require administrator rights.
 
+This script has one required parameter.
+
+1. ```$DomainNames``` - ```$DomainNames``` accepts multiple values as a comma-seperated list. 
+
+The script has three optional parameters.
+
+1. ```$ReportLocation``` - If this parameter is not specified, the value for ```$ReportLocation``` will be set to ```"$env:USERPROFILE\Desktop\"```.
+
+2. ```$File``` - If this paramter is not specified, the value for ```$File``` will be set to ```"DNS_Report-$DomainNames-$(Get-Date -Format ddMMyyyy_HHmmss).csv"```.
+
+3. ```$DnsIp``` - If this parameter is not specified, the value for ```$DnsIp``` will be set to ```"8.8.8.8"```.
 
 ### Footnotes
