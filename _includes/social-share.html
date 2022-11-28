@@ -51,6 +51,14 @@
   {% endif %}
 
   {% if site.share-links-active.mastodon %}
+  <div
+  class="mastodon-share-button"
+  data-target="https://aly-ve.github.io/Mastodon-share-button/"
+  data-name="Test of #MSB"
+  data-buttonstyle="btn btn-primary"
+  data-text="Share on Mastodon"
+  ></div>
+
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -79,25 +87,24 @@
   </div>
 
   <script>
-    var msbConfig = {
+    const msbConfig = {
       openModal: function () {
         $('#exampleModal').modal('show');
       },
       closeModal: function () {
         $('#exampleModal').modal('hide');
       },
-      addressFieldSelector: '#mbs-address',
-      buttonModalSelector: '#modalShareButton',
+      addressFieldSelector: '#msb-address',
+      buttonModalSelector: '#msb-share',
       memorizeFieldId: 'msb-memorize-instance',
-      buttonDisplayText: false, 
       buttonIconHtml: '<i class="fa fa-mastodon" aria-hidden="true"></i>'
-
     };
 
-    $('#exampleModal').on('shown.bs.modal', function() {
+    $('.modal').on('shown.bs.modal', function() {
       $('#msb-address').focus();
-    }); 
+    });
   </script>
+
   <script src="/assets/js/mastodon.js"></script>
   {% endif %}
 
