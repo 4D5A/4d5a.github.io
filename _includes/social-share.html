@@ -79,22 +79,24 @@
   </div>
 
   <script>
-    const msbConfig = {
+    var msbConfig = {
       openModal: function () {
         $('#exampleModal').modal('show');
       },
       closeModal: function () {
         $('#exampleModal').modal('hide');
       },
-      addressFieldSelector: '#msb-address',
-      buttonModalSelector: '#msb-share',
+      addressFieldSelector: '#mbs-address',
+      buttonModalSelector: '#modalShareButton',
       memorizeFieldId: 'msb-memorize-instance',
+      buttonDisplayText: false, 
       buttonIconHtml: '<i class="fa fa-mastodon" aria-hidden="true"></i>'
+
     };
 
-    $('.modal').on('shown.bs.modal', function() {
+    $('#exampleModal').on('shown.bs.modal', function() {
       $('#msb-address').focus();
-    });
+    }); 
   </script>
   {% endif %}
 
