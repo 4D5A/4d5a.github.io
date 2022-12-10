@@ -22,17 +22,17 @@ In the past, when someone asked Network Administrators and Systems Administrator
 
 > What about DKIM?
 
-DKIM uses a public key on a public server to decrypt the DKIM Signature on an email.<sup>1</sup> A DNS record is created that specifies the public key to use to decrypt DKIM Signatures.<sup>2</sup> That DNS record is referred to as a "DKIM Selector".<sup>3</sup> DKIM Selectors can either be A records or CNAME records. Many large email providers create the private/public key pair for you and to let the rest of world know how to decrypt DKIM signatures for emails your server sends, you would need to create a CNAME record.<sup>4</sup>
+DKIM uses a public key on a public server to decrypt the DKIM Signature on an email.<sup>1</sup> A DNS record is created that specifies the public key to use to decrypt DKIM Signatures.<sup>2</sup> That DNS record is referred to as a "DKIM Selector".<sup>3</sup> Google refers to DKIM Selectors as "prefix selectors".<sup>4</sup> DKIM Selectors can either be A records or CNAME records.<sup>5</sup> Since third party email service provider's servers store the private key on their server, we normally only need to create a CNAME record that points to the third party email service provider's public key.<sup>6</sup>
 
-For example, if you use DKIM for signing outbound emails from Exchange Online, there are two changes you need to make:
+For example, if you use DKIM for signing outbound emails from Exchange Online, there are three changes you need to make:
 
-1. Create DKIM Keys<sup>5</sup>
-2. Create two CNAME records for your DKIM Selectors<sup>6</sup>
-3. Enable DKIM<sup>7</sup>
+1. Create DKIM Keys<sup>7</sup>
+2. Create two CNAME records for your DKIM Selectors<sup>8</sup>
+3. Enable DKIM<sup>9</sup>
 
 Another feature making querying DKIM Selectors difficult is that DKIM offers you the ability to have multiple private/public key pairs for one domain name so differnet email services that you use to send email have their own DKIM signatures. This allows you to say, use one private/public keypair to DKIM sign emails sent using your domain name from Exchange Online and another for emails sent using your domain name from a third party (e.g. servers that you use to send sales emails from your domain name and servers you use to send marketing emails from your domain name). Because DKIM Selectors can be CNAME records and you would need to know what the CNAME records are to query them, and one domain name can have multiple private/public keypairs, it is difficult to automate the process of checking for those DKIM records.
 
-Microsoft notes that Microsoft 365 selectors are "selector1" and "selector2" so we can automate the process of checking domain names which use Microsoft 365 for DKIM records.<sup>8</sup>
+Microsoft notes that Microsoft 365 selectors are "selector1" and "selector2" so we can automate the process of checking domain names which use Microsoft 365 for DKIM records.<sup>10</sup>
 
 #### Using MX records to determine the email or filter provider
 
@@ -137,12 +137,12 @@ Click [Invoke-DNSQuery](https://github.com/4D5A/Networks-Administration/blob/mai
 [1][https://support.google.com/a/answer/11611356?hl=en](https://support.google.com/a/answer/11611356?hl=en)
 [2][https://support.google.com/a/answer/11611356?hl=en](https://support.google.com/a/answer/11611356?hl=en)
 [3][https://support.google.com/a/answer/11611356?hl=en](https://support.google.com/a/answer/11611356?hl=en)
-[4][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
-[5][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
+[4][https://support.google.com/a/answer/11611356?hl=en](https://support.google.com/a/answer/11611356?hl=en)
+[5]https://easydmarc.com/tools/dkim-record-generator/](https://easydmarc.com/tools/dkim-record-generator/)
 [6][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
-
+[7][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 [8][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#publish-two-cname-records-for-your-custom-domain-in-dns](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#publish-two-cname-records-for-your-custom-domain-in-dns)
+[9][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
+[10][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#publish-two-cname-records-for-your-custom-domain-in-dns](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide#publish-two-cname-records-for-your-custom-domain-in-dns)
 
-
-[4][https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide)
-[1] [https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname)
+[1][https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname)
