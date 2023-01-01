@@ -14,7 +14,7 @@ subtitle:
 <img alt="InfoSec" src="https://img.shields.io/badge/-InfoSec-yellow">
 <img alt="DFIR" src="https://img.shields.io/badge/-DFIR-yellow">
 
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/4D5A/4D5A.github.io/Beautiful%20Jekyll%20CI">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/4D5A/4d5a.github.io/ci.yml?branch=main">
 
 SOC Manager, Blue Team, Sometimes Red Team, Infosec, DFIR. Posts are my own.
 
