@@ -131,7 +131,6 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 ##### Using CNAME records to check for missing or misconfigured DKIM records for domain names which use Exchange Online for email
 
 ~~~
-
 $DKIMPrefixes = "s1","s2"
     If ($MicrosoftTextDNSRecord) {
         $DKIMPrefixes += "selector1","selector2"
@@ -147,7 +146,6 @@ $DKIMPrefixes = "s1","s2"
         $DKIMRecordNames = "None"
         $DKIMRecords = "MISCONFIGURATION: No DKIM record."
     }
-
 ~~~
 
 ### Invoke-DNSQuery
