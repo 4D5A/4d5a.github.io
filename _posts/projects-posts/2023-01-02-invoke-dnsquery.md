@@ -32,6 +32,8 @@ For example, if you use DKIM for signing outbound emails from Exchange Online, t
 
 Another feature making querying DKIM Selectors difficult is that DKIM offers you the ability to have multiple public/private key pairs for one domain name so differnet email services that you use to send email have their own DKIM signatures. This allows you to say, use one public/private keypair to DKIM sign emails sent using your domain name from Exchange Online and another for emails sent using your domain name from a third party (e.g. servers that you use to send sales emails from your domain name and servers you use to send marketing emails from your domain name). Because DKIM Selectors can be CNAME records and you would need to know what the CNAME records are to query them, and one domain name can have multiple public/private keypairs, it is difficult to automate the process of checking for those DKIM records.
 
+### DKIM
+
 Often, vendors suggest using "s1" and "s2" as the DKIM Selectors.<sup>10,</sup><sup>11,</sup><sup>12</sup>
 
 Microsoft notes that Microsoft 365 selectors are "selector1" and "selector2" so we can automate the process of checking domain names which use Microsoft 365 for DKIM records.<sup>13</sup>
@@ -54,7 +56,17 @@ A query is made for a TXT record with a value that includes the string "MS=" (Th
 
 If a TXT record with a value that includes the string "MS=" is found, the DKIM Prefixes "selector1" and "selector2" are added to the $DKIMPrefixes array.
 
+After the $DKIMPrefixes array is complete, the script uses the following command to resolve the DKIM Record Names for each DKIM Prefix in the $DKIMPrefixes array.
 
+```(Resolve-DnsName -Name "$DKIMPrefix._domainkey.$DomainName" -Type TXT -Server $DnsIp -DnssecCd).NameHost```
+
+The results are added an array named $DKIMRecordNames.
+
+The script calculates the number of identified DKIM Records and if the number is greater than 0, the script runs the command below to obtain the DKIM signatures of each DKIM Record located for the domain name.
+
+```(Resolve-DnsName -Name "$DKIMRecordName" -Type TXT -Server $DnsIp -DnssecCd).Strings```
+
+The DKIM Records and DKIM Signatures are added as properties to a custom object.
 
 #### Using MX records to determine the email or filter provider
 
@@ -71,7 +83,7 @@ Here is a table of strings which may be located in MX records and matching email
 | yahoodns.net | Yahoo |
 | aspmx.l.google.com | Google |
 
-PowerShell includes the ```Resolve-DnsName``` cmdlet which provides you with the ability to query DNS records. Unlike the output obtanied from ```nslookup```, ```Resolve-DnsName``` produces object-oriented output, which in turn makes assigning a specific portion of a DNS query result as a variable. Microsoft's documentation for the ```Resolve-DnsName``` cmdlet is accessible at [https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname).
+PowerShell includes the ```Resolve-DnsName``` cmdlet which provides you with the ability to query DNS records. Unlike the output obtanied from ```nslookup```, ```Resolve-DnsName``` produces object-oriented output, which in turn makes assigning a specific portion of a DNS query result as a variable. Microsoft's documentation for the ```Resolve-DnsName``` cmdlet is accessible at [https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname).<sup>17</sup>
 
 An example of using the ```Resolve-DnsName``` cmdlet might be querying Google's Public DNS server 8.8.8.8 for the MX records of google.com.
 
@@ -118,7 +130,23 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 
 ##### Using CNAME records to check for missing or misconfigured DKIM records for domain names which use Exchange Online for email
 
-
+```
+$DKIMPrefixes = "s1","s2"
+    If ($MicrosoftTextDNSRecord) {
+        $DKIMPrefixes += "selector1","selector2"
+    }
+    Foreach ($DKIMPrefix in $DKIMPrefixes) {
+        $DKIMRecordName = (Resolve-DnsName -Name "$DKIMPrefix._domainkey.$DomainName" -Type TXT -Server $DnsIp -DnssecCd).NameHost
+        If ($DKIMRecordName) {
+            $DKIMRecordNames += $DKIMRecordName
+        }
+    }
+    $DKIMRecordCount = ($DKIMRecordNames).Count
+    If ($DKIMRecordCount -eq 0) {
+        $DKIMRecordNames = "None"
+        $DKIMRecords = "MISCONFIGURATION: No DKIM record."
+    }
+```
 
 ### Invoke-DNSQuery
 This script is written in PowerShell. It does not require additional modules. It does not require administrator rights.
@@ -190,4 +218,4 @@ Click [Invoke-DNSQuery](https://github.com/4D5A/Networks-Administration/blob/mai
 
 [16] [https://learn.microsoft.com/en-us/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide](https://learn.microsoft.com/en-us/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)
 
-[1][https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname)
+[17][https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname)
