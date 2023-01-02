@@ -67,6 +67,7 @@ Here is a table of strings which may be located in MX records and matching email
 | hydra.sophos.com | Sophos |
 | barracudanetworks.com | Barracuda Networks |
 | secureserver.net | GoDaddy |
+| yahoodns.net | Yahoo |
 | aspmx.l.google.com | Google |
 
 PowerShell includes the ```Resolve-DnsName``` cmdlet which provides you with the ability to query DNS records. Unlike the output obtanied from ```nslookup```, ```Resolve-DnsName``` produces object-oriented output, which in turn makes assigning a specific portion of a DNS query result as a variable. Microsoft's documentation for the ```Resolve-DnsName``` cmdlet is accessible at [https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname](https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname).
