@@ -130,7 +130,7 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 
 ##### Using CNAME records to check for missing or misconfigured DKIM records for domain names which use Exchange Online for email
 
-{% highlight powershell %}
+~~~
 
 $DKIMPrefixes = "s1","s2"
     If ($MicrosoftTextDNSRecord) {
@@ -148,7 +148,7 @@ $DKIMPrefixes = "s1","s2"
         $DKIMRecords = "MISCONFIGURATION: No DKIM record."
     }
 
-{% endhighlight %}
+~~~
 
 ### Invoke-DNSQuery
 This script is written in PowerShell. It does not require additional modules. It does not require administrator rights.
