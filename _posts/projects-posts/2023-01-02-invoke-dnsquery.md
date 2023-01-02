@@ -60,6 +60,7 @@ If a TXT record with a value that includes the string "MS=" is found, the DKIM P
 
 Here is a table of strings which may be located in MX records and matching email or filter providers. This information is subject to change and must not be considered to be exhaustive. You should refer to current documentation provided by each email and filter provider for what MX records they each require.
 
+| MX Record | Email / Email Spam Filter Provider |
 | olc.protection.outlook.com | Outlook.com |
 | mail.protection.outlook.com | Exchange Online |
 | mimecast.com | Mimecast |
