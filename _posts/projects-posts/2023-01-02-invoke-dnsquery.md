@@ -126,9 +126,15 @@ I could use an ```If``` statement like ```If (-Not($SPFDetails))``` with the exa
 
 ##### Using TXT records to check for missing or misconfigured DMARC records
 
+A similiar command can be used to check for missing of misconfigured DMARC records. A domain name should have one DMARC record. Invoke-DNSQuery counts the number of DMARC records, and the number is zero, the domain name is missing a DMARC record. If Invoke-DNSQuery counts the number of DMARC records, and the number is greater than one, there is a DMARC related misconfiguration.
+
 ```$DMARCRecordCount = (Resolve-DnsName -Name _dmarc.$DomainName -Type TXT -Server $DnsIp -DnssecCd | Where-Object -Property Name -match -Value "_dmarc.$DomainName").count```
 
 ##### Using CNAME records to check for missing or misconfigured DKIM records for domain names which use Exchange Online for email
+
+Since there isn't a way to identify all of the DKIM records for a domain name with any certainty, Invoke-DNSQuery isn't able to count the number of DKIM records the same way it counted SPF and DMARC records. Instead, Invoke-DNSQuery looks for DKIM records with a handful of well-known DKIM Prefixes. Detected DKIM records are stored in the array named, $DKIMRecordNames and counted.
+
+If the array $DKIMRecordName does not contain any DKIM records, the domain name _may_ be missing a DKIM record.
 
 ~~~
 $DKIMPrefixes = "s1","s2"
