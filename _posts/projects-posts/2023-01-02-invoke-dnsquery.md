@@ -6,7 +6,6 @@ gh-badge: [follow, star]
 categories: [projects]
 tags: [DNS, Network-Administration-Tools]
 after-content: [disclaimer-notice.html]
-comments: false
 ---
 ### Introduction
 Many Network Administrators and Systems Administrators frequently respond to questions about why an email wasn't received by someone in their organization. The questions are often asked with a tone of "why did you block my email?" or "something is obviously wrong, because I should have received that email" and the people asking sometimes come off as accusing the Network Administrator or Systems Administrator of doing something wrong. Many times, emails are blocked by spam filters because they failed one or more processes to verify the email was sent from an authorized server for the sending domain name and the content of the email did not change from the time it was sent until the time it was received. The processes verify that information are named Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication Reporting & Conformance (DMARC).    
