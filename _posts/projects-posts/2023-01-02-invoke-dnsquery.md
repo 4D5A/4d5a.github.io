@@ -74,7 +74,7 @@ Since most domain names have multiple DNS records for failover, I decided to foc
 
 ```$DNSRecord = Resolve-DnsName -Name google.com -Type MX -Server 8.8.8.8 -DnssecCd | Sort-Object -Property Preference -Descending | Select-Object -Last 1 | Select-Object -ExpandProperty NameExchange```
 
-### DKIM
+#### DKIM
 
 Often, vendors suggest using "s1" and "s2" as the DKIM Selectors.<sup>11,</sup><sup>12,</sup><sup>13</sup>
 
