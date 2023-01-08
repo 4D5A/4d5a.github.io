@@ -4,9 +4,6 @@ title: Configuring Microsoft Intune to automatically enable BitLocker with full 
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-cover-img: /assets/img/2022-07-10-configuring-microsoft-intune-to-automatically-enable-bitlocker-with-full-volume-encryption/microsoft-intune-bitlocker-base-settings.png
-thumbnail-img: /assets/img/2022-07-10-configuring-microsoft-intune-to-automatically-enable-bitlocker-with-full-volume-encryption/microsoft-intune-bitlocker-base-settings.png
-share-img: /assets/img/2022-07-10-configuring-microsoft-intune-to-automatically-enable-bitlocker-with-full-volume-encryption/microsoft-intune-bitlocker-base-settings.png
 tags: [Microsoft 365, Intune, BitLocker]
 after-content: [disclaimer-notice.html]
 ---
