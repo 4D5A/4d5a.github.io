@@ -287,8 +287,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
   - docs/
+  - _post-templates/
   - _drafts/
 
 plugins:
