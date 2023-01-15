@@ -40,7 +40,9 @@ Get-PKICertificates -DeleteBySubject www.example.com
 ```
 
 ### How to delete a certificate by its thumbprint
+```powershell
 Get-PKICertificates -DeleteCertificate XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
 
 ## Download Get-PKICertificates
 Click [Get-PKICertificates](https://github.com/4D5A/Systems-Administration/blob/main/Windows/Configuration%20Management/Get-PKICertificates/Get-PKICertificates.ps1) to download Get-PKICertificates.
