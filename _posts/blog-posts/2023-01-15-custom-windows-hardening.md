@@ -24,3 +24,28 @@ Several paid tools offer the ability to scan computers' settings to determine th
 I have also created a custom checklist which I continue to modify.
 
 windows_hardening can be used to check the settings of a computer and to apply settings contained in a checklist. If no checklist is specified, 0x6d69636b's custom checklist is used.
+
+
+## Install windows_hardening
+
+You can install windows_hardening by downloading the newest release, copying the files, and importing the PowerShell module.
+
+Alternatively, you can run the PowerShell function below which automatically downloads the newest release from 0x6d69636b's windows_hardening repository.
+
+~~~powershell
+Function InstallHardeningKitty() {
+    $Version = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).Name
+    $HardeningKittyLatestVersionDownloadLink = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).zipball_url
+    $ProgressPreference = 'SilentlyContinue'
+    Invoke-WebRequest $HardeningKittyLatestVersionDownloadLink -Out HardeningKitty$Version.zip
+    Expand-Archive -Path ".\HardeningKitty$Version.zip" -Destination ".\HardeningKitty$Version" -Force
+    $Folder = Get-ChildItem .\HardeningKitty$Version | Select-Object Name -ExpandProperty Name
+    Move-Item ".\HardeningKitty$Version\$Folder\*" ".\HardeningKitty$Version\"
+    Remove-Item ".\HardeningKitty$Version\$Folder\"
+    New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version -ItemType Directory
+    Set-Location .\HardeningKitty$Version
+    Copy-Item -Path .\HardeningKitty.psd1,.\HardeningKitty.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\ -Recurse
+    Import-Module "$Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\HardeningKitty.psm1"
+}
+InstallHardeningKitty
+~~~
