@@ -29,7 +29,7 @@ windows_hardening can be used to check the settings of a computer and to apply s
 
 You can install windows_hardening by downloading the newest release, copying the files, and importing the PowerShell module.
 
-Alternatively, you can run the PowerShell function below which automatically downloads the newest release from 0x6d69636b's windows_hardening repository.
+Alternatively, you can run the PowerShell function below which automatically downloads the newest release from the [4D5A/windows_hardening](https://github.com/4D5A/windows_hardening) repository.
 
 ```powershell
 Function InstallWindowsHardening() {
@@ -48,5 +48,14 @@ Function InstallWindowsHardening() {
 }
 InstallWindowsHardening
 ```
+
+## Using Windows Hardening
+
+### Config
+
+### Audit
+
+
+### HailMary
 
 [1] [https://github.com/scipag/HardeningKitty](https://github.com/scipag/HardeningKitty)
