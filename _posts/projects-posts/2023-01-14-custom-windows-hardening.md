@@ -49,10 +49,12 @@ InstallWindowsHardening
 windows_hardening has three modes. The modes are Config, Audit, and HailMary. In Config mode, windows_hardening reports on your systems's settings using the checklist provided with the ```FileFindingList``` switch when you run the command (if the ```FileFindingList``` switch is not provided, windows_hardening will use the finding_list_0x6d69636b_machine.csv checklist) as the list of settings to check. In Audit mode, windows_hardening checks your system's settings and compares them with the suggested settings found in the checklist provided with the ```FileFindingList``` (or the default checklist if the ```FileFindingList``` is not provided) and outputs the results to the console. In HailMary mode, windows_hardening configures your system using the settings contained in the checklist provided with the ```FileFindingList``` switch when you run the command. If windows_hardening is run in HailMary mode, it is necessary to explicity select a checklist.
 
 > Use extreme caution if you choose to run windows_hardening in HailMary mode. Because running windows_hardening in HailMary mode will make changes to your system's registry, it is possible that changes to create problems. Be sure to create a backup of your system (and verify the completeness and functionality of your backup) before you run windows_hardening in HailMary mode.
+
 ### Config
-~~~powershell
+```powershell
 Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
-~~~
+```
+
 ### Audit
 ```powershell
 Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
