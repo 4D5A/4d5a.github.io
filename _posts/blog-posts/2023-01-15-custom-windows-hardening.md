@@ -17,9 +17,7 @@ I am not employed by or otherwise affiliated with [0x6d69636b](https://github.co
 
 ### Overview
 
-Several paid tools offer the ability to scan computers' settings to determine the conformance with security standards such as Microsoft, CIS Benchmarks, DoD STIG and BSI SiSyPHuS. I have not found many open source or freeware solutions that allow you to scan computers' settings to determine their conformance with those security standards let alone apply the settings for a standard.
-
-0x6d69636b's windows_hardening solution is a free, open-source tool that gives infosec professionals the ability to evaluate a computer's configuration to assess its conformance with a specific checklist. 0x6d69636b maintains checklists related to Microsoft, CIS Benchmarks, DoD STIG and BSI SiSyPHuS guidelines. 0x6d69636b also maintains a custom checklist.
+Several paid tools offer the ability to scan computers' settings to determine the conformance with security standards such as CIS Benchmarks. I have not found many open source or freeware solutions that allow you to scan computers' settings to determine their conformance with those security standards let alone apply the settings for a standard. 0x6d69636b's windows_hardening solution is such a tool. It is free and open source. It gives infosec professionals the ability to evaluate a computer's configuration to assess its conformance with a specific checklist that is written as a CSV file. 0x6d69636b maintains checklists related to Microsoft, CIS Benchmarks, and other security standards. 0x6d69636b also maintains a custom checklist.
 
 I have also created a custom checklist which I continue to modify.
 
