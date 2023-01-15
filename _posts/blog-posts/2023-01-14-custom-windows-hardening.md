@@ -51,16 +51,16 @@ windows_hardening has three modes. The modes are Config, Audit, and HailMary. In
 > Use extreme caution if you choose to run windows_hardening in HailMary mode. Because running windows_hardening in HailMary mode will make changes to your system's registry, it is possible that changes to create problems. Be sure to create a backup of your system (and verify the completeness and functionality of your backup) before you run windows_hardening in HailMary mode.
 ### Config
 ~~~powershell
-Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
+Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
 ~~~
 ### Audit
 ```powershell
-Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
+Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
 ```
 
 ### HailMary
 ```powershell
-Invoke-HardeningKitty -Mode HailMary -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
+Invoke-HardeningKitty -Mode HailMary -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
 ```
 
 [1] [https://github.com/scipag/HardeningKitty](https://github.com/scipag/HardeningKitty)
