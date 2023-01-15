@@ -25,7 +25,6 @@ I have also created a custom checklist which I continue to modify.
 
 windows_hardening can be used to check the settings of a computer and to apply settings contained in a checklist. If no checklist is specified, 0x6d69636b's custom checklist is used.
 
-
 ## Install windows_hardening
 
 You can install windows_hardening by downloading the newest release, copying the files, and importing the PowerShell module.
