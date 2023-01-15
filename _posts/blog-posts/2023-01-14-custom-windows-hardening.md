@@ -49,6 +49,7 @@ InstallWindowsHardening
 
 ### Config
 ```Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report```
+<!-- test -->
 ### Audit
 ```powershell
 Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
