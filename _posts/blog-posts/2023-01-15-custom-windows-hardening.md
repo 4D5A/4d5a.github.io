@@ -32,20 +32,20 @@ You can install windows_hardening by downloading the newest release, copying the
 
 Alternatively, you can run the PowerShell function below which automatically downloads the newest release from 0x6d69636b's windows_hardening repository.
 
-~~~powershell
-Function InstallHardeningKitty() {
+```powershell
+Function InstallWindowsHardening() {
     $Version = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).Name
-    $HardeningKittyLatestVersionDownloadLink = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).zipball_url
+    $WindowsHardeningLatestVersionDownloadLink = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).zipball_url
     $ProgressPreference = 'SilentlyContinue'
-    Invoke-WebRequest $HardeningKittyLatestVersionDownloadLink -Out HardeningKitty$Version.zip
-    Expand-Archive -Path ".\HardeningKitty$Version.zip" -Destination ".\HardeningKitty$Version" -Force
-    $Folder = Get-ChildItem .\HardeningKitty$Version | Select-Object Name -ExpandProperty Name
-    Move-Item ".\HardeningKitty$Version\$Folder\*" ".\HardeningKitty$Version\"
-    Remove-Item ".\HardeningKitty$Version\$Folder\"
-    New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version -ItemType Directory
-    Set-Location .\HardeningKitty$Version
-    Copy-Item -Path .\HardeningKitty.psd1,.\HardeningKitty.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\ -Recurse
-    Import-Module "$Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\HardeningKitty.psm1"
+    Invoke-WebRequest $WindowsHardeningLatestVersionDownloadLink -Out WindowsHardening$Version.zip
+    Expand-Archive -Path ".\WindowsHardening$Version.zip" -Destination ".\WindowsHardening$Version" -Force
+    $Folder = Get-ChildItem .\WindowsHardening$Version | Select-Object Name -ExpandProperty Name
+    Move-Item ".\WindowsHardening$Version\$Folder\*" ".\WindowsHardening$Version\"
+    Remove-Item ".\WindowsHardening$Version\$Folder\"
+    New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\WindowsHardening\$Version -ItemType Directory
+    Set-Location .\WindowsHardening$Version
+    Copy-Item -Path .\WindowsHardening.psd1,.\WindowsHardening.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\WindowsHardening\$Version\ -Recurse
+    Import-Module "$Env:ProgramFiles\WindowsPowerShell\Modules\WindowsHardening\$Version\WindowsHardening.psm1"
 }
-InstallHardeningKitty
-~~~
+InstallWindowsHardening
+```
