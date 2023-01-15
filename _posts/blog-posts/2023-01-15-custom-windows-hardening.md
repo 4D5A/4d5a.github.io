@@ -1,0 +1,26 @@
+---
+layout: post
+title: Custom Windows Hardening
+gh-repo: 4D5A/windows_hardening
+gh-badge: [follow, star]
+categories: [projects]
+tags: [Systems-Administration-Tools, infosec]
+after-content: [disclaimer-notice.html]
+---
+# Custom Windows Hardening
+
+## Introduction
+
+4D5A/windows_hardening is a fork of windows_hardening by Michael Schneider (0x6d69636b). windows_hardening is a repository used for development and the production repository is HardeningKitty by scipag. The PowerShell module in the production repository is digitally signed by scipag.
+
+This is a personal fork of windows_hardening by 0x6d69636b. I am not employed by or otherwise affiliated with 0x6d69636b or scipag other than occassionally contributing to the windows_hardening repository.
+
+### Overview
+
+Several paid tools offer the ability to scan computers' settings to determine the conformance with security standards such as Microsoft, CIS Benchmarks, DoD STIG and BSI SiSyPHuS. I have not found many open source or freeware solutions that allow you to scan computers' settings to determine their conformance with those security standards let alone apply the settings for a standard.
+
+0x6d69636b's windows_hardening solution is a free, open-source tool that gives infosec professionals the ability to evaluate a computer's configuration to assess its conformance with a specific checklist. 0x6d69636b maintains checklists related to Microsoft, CIS Benchmarks, DoD STIG and BSI SiSyPHuS guidelines. 0x6d69636b also maintains a custom checklist.
+
+I have also created a custom checklist which I continue to modify.
+
+windows_hardening can be used to check the settings of a computer and to apply settings contained in a checklist. If no checklist is specified, 0x6d69636b's custom checklist is used.
