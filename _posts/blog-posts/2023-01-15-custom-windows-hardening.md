@@ -49,7 +49,7 @@ Function InstallWindowsHardening() {
 InstallWindowsHardening
 ```
 
-## Using Windows Hardening
+## Using windows_hardening
 
 ### Config
 
