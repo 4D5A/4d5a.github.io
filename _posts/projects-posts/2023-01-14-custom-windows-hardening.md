@@ -25,24 +25,24 @@ windows_hardening can be used to check the settings of a computer and to apply s
 
 You can install windows_hardening by downloading the newest release, copying the files, and importing the PowerShell module.
 
-Alternatively, you can run the PowerShell function below which automatically downloads the newest release from the [4D5A/windows_hardening](https://github.com/4D5A/windows_hardening) repository.
+Alternatively, you can run the PowerShell function below which automatically downloads the newest release from the [0x6d69636b/windows_hardening](https://github.com/0x6d69636b/windows_hardening) repository.
 
 ```powershell
-Function InstallWindowsHardening() {
-    $Version = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).Name
-    $WindowsHardeningLatestVersionDownloadLink = ((Invoke-WebRequest "https://api.github.com/repos/4d5a/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).zipball_url
+Function InstallHardeningKitty() {
+    $Version = ((Invoke-WebRequest "https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).Name
+    $HardeningKittyLatestVersionDownloadLink = ((Invoke-WebRequest "https://api.github.com/repos/0x6d69636b/windows_hardening/releases/latest" -UseBasicParsing) | ConvertFrom-Json).zipball_url
     $ProgressPreference = 'SilentlyContinue'
-    Invoke-WebRequest $WindowsHardeningLatestVersionDownloadLink -Out WindowsHardening$Version.zip
-    Expand-Archive -Path ".\WindowsHardening$Version.zip" -Destination ".\WindowsHardening$Version" -Force
-    $Folder = Get-ChildItem .\WindowsHardening$Version | Select-Object Name -ExpandProperty Name
-    Move-Item ".\WindowsHardening$Version\$Folder\*" ".\WindowsHardening$Version\"
-    Remove-Item ".\WindowsHardening$Version\$Folder\"
-    New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\WindowsHardening\$Version -ItemType Directory
-    Set-Location .\WindowsHardening$Version
-    Copy-Item -Path .\WindowsHardening.psd1,.\WindowsHardening.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\WindowsHardening\$Version\ -Recurse
-    Import-Module "$Env:ProgramFiles\WindowsPowerShell\Modules\WindowsHardening\$Version\WindowsHardening.psm1"
+    Invoke-WebRequest $HardeningKittyLatestVersionDownloadLink -Out HardeningKitty$Version.zip
+    Expand-Archive -Path ".\HardeningKitty$Version.zip" -Destination ".\HardeningKitty$Version" -Force
+    $Folder = Get-ChildItem .\HardeningKitty$Version | Select-Object Name -ExpandProperty Name
+    Move-Item ".\HardeningKitty$Version\$Folder\*" ".\HardeningKitty$Version\"
+    Remove-Item ".\HardeningKitty$Version\$Folder\"
+    New-Item -Path $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version -ItemType Directory
+    Set-Location .\HardeningKitty$Version
+    Copy-Item -Path .\HardeningKitty.psd1,.\HardeningKitty.psm1,.\lists\ -Destination $Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\ -Recurse
+    Import-Module "$Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\HardeningKitty.psm1"
 }
-InstallWindowsHardening
+InstallHardeningKitty
 ```
 
 ## Using windows_hardening
@@ -52,17 +52,22 @@ windows_hardening has three modes. The modes are Config, Audit, and HailMary. In
 
 ### Config
 ```powershell
-Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
+Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
 ```
 
 ### Audit
 ```powershell
-Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
+Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
 ```
 
 ### HailMary
 ```powershell
-Invoke-HardeningKitty -Mode HailMary -FileFindingList .\lists\finding_list_4d5a_machine.csv -Log -Report
+Invoke-HardeningKitty -Mode HailMary -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
 ```
+
+## Custom Checklist
+If you are interested in downloading my custom checklist, you can find it at [https://github.com/4D5A/windows_hardening/blob/main/lists/finding_list_4d5a_machine.csv](https://github.com/4D5A/windows_hardening/blob/main/lists/finding_list_4d5a_machine.csv).
+
+You may also choose to clone my fork of windows_hardening. You can clone my fork of windows_hardening by running the command ```git clone https://github.com/4D5A/windows_hardening.git```.
 
 [1] [https://github.com/scipag/HardeningKitty](https://github.com/scipag/HardeningKitty)
