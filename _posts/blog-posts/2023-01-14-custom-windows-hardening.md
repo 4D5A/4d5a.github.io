@@ -48,9 +48,17 @@ InstallWindowsHardening
 ## Using windows_hardening
 
 ### Config
-
+```powershell
+Invoke-HardeningKitty -Mode Config -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
+```
 ### Audit
+```powershell
+Invoke-HardeningKitty -Mode Audit -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
+```
 
 ### HailMary
+```powershell
+Invoke-HardeningKitty -Mode HailMary -FileFindingList .\lists\finding_list_0x6d69636b_user.csv -Log -Report
+```
 
 [1] [https://github.com/scipag/HardeningKitty](https://github.com/scipag/HardeningKitty)
