@@ -11,7 +11,7 @@ after-content: [disclaimer-notice.html]
 
 ## Introduction
 
-[4D5A/windows_hardening](https://github.com/4D5A/windows_hardening) is a personal fork of [0x6d69636b/windows_hardening](https://github.com/0x6d69636b/windows_hardening) by Michael Schneider [0x6d69636b](https://github.com/0x6d69636b). [0x6d69636b/windows_hardening](https://github.com/0x6d69636b/windows_hardening) is a repository used for development and the production repository is [HardeningKitty](https://github.com/scipag/HardeningKitty) by [scipag](https://github.com/scipag). The PowerShell module in the production repository is digitally signed by scipag.<sup>1</sup>
+[4D5A/windows_hardening](https://github.com/4D5A/windows_hardening) is a personal fork of [0x6d69636b/windows_hardening](https://github.com/0x6d69636b/windows_hardening) by Michael Schneider [0x6d69636b](https://github.com/0x6d69636b). [0x6d69636b/windows_hardening](https://github.com/0x6d69636b/windows_hardening) is a repository used for development and the production repository is [HardeningKitty](https://github.com/scipag/HardeningKitty) by [scipag](https://github.com/scipag). The PowerShell module in the [scipag/HardeningKitty](https://github.com/scipag/HardeningKitty) repository is digitally signed by scipag.<sup>1</sup>
 
 I am not employed by or otherwise affiliated with [0x6d69636b](https://github.com/0x6d69636b) or [scip ag](https://github.com/scipag) other than occassionally contributing to the [0x6d69636b/windows_hardening](https://github.com/0x6d69636b/windows_hardening) repository.
 
