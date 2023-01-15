@@ -7,18 +7,18 @@ categories: [projects]
 tags: [DNS, Systems-Administration-Tools]
 after-content: [disclaimer-notice.html]
 ---
-## Introduction
+### Introduction
 When I first started scripting with PowerShell, I came across the Get-PSDrive cmdlet. [https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-psdrive?view=powershell-7.3](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-psdrive?view=powershell-7.3) Immediately one of the things that stood out to me was that with PowerShell, it was possible to access storage devices, the registry, and certificate stores similar to the process of accessing storage devices with Windows Command Prompt. One of the PowerShell scripts I wrote allowed me to delete or add a certificate to the certificate store. Years later, a post by [@mubix@infosec.exchange](https://infosec.exchange/@mubix), helped me think of a possible use case for such a script. According to [@mubix@infosec.exchange](https://infosec.exchange/@mubix),<sup>1</sup> there were pentesters who in some cases need to install certificates during their work but don't remember to delete them later which can create security vulnerabilities. He suggested that Network Defenders require thumbprints for all certificates created by the pentester(s) so the Network Defenders can delete them.
 
-## Accessing Windows' Certificate Stores in PowerShell
+### Accessing Windows' Certificate Stores in PowerShell
 Get-PKICertificates gives the option of choosing from the following System and Physical stores:
 
-### System Stores
+#### System Stores
 
 * CurrentUser
 * LocalMachine
 
-### Physical Stores
+#### Physical Stores
 
 * AddressBook
 * AuthRoot
@@ -29,9 +29,9 @@ Get-PKICertificates gives the option of choosing from the following System and P
 * TrustedPeople
 * TrustedPublisher
 
-## How to delete certificates
+### How to delete certificates
 If you do not specify the SystemStore and PhysicalStore to use, the script will use the default. The default SystemStore is **CurrentUser**. The default PhysicalStore is **My**.
-### How to delete a certificate by its subject
+#### How to delete a certificate by its subject
 
 > If you choose to delete a certificate by its subject, you should exercise extreme caution because the command ```Get-PKICertificates -DeleteBySubject www.example.com``` will delete all certificates that are _-like "*$DeleteBySubject*"_. Please read [https://technet.microsoft.com/en-us/library/hh847759.aspx](https://technet.microsoft.com/en-us/library/hh847759.aspx) for additional information on how PowerShell processes information compared with the -like operator before you choose to use DeleteBySubject.
 
@@ -39,12 +39,12 @@ If you do not specify the SystemStore and PhysicalStore to use, the script will 
 Get-PKICertificates -DeleteBySubject www.example.com
 ```
 
-### How to delete a certificate by its thumbprint
+#### How to delete a certificate by its thumbprint
 ```powershell
 Get-PKICertificates -DeleteCertificate XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-## Download Get-PKICertificates
+### Download Get-PKICertificates
 Click [Get-PKICertificates](https://github.com/4D5A/Systems-Administration/blob/main/Windows/Configuration%20Management/Get-PKICertificates/Get-PKICertificates.ps1) to download Get-PKICertificates.
-## Footnotes
+### Footnotes
 [1] [https://infosec.exchange/@mubix/109379491407168790](https://infosec.exchange/@mubix/109379491407168790)
