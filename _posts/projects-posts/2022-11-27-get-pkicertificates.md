@@ -37,7 +37,6 @@ If you do not specify the SystemStore and PhysicalStore to use, the script will 
 Get-PKICertificates -DeleteCertificate XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-
 #### How to bulk delete certificates with their thumbprints
 If there is a need to bulk delete certificates and you know their thumbprints, you can create a CSV file that has a header of *thumbprint*,*systemstore*.*physicalstore*.
 
@@ -47,10 +46,8 @@ If you create the CSV file with those columns and provide the information for ea
 Get-PKICertificates -BulkDelete C:\certificates-to-delete.csv
 ```
 
-
 #### How to delete a certificate by its subject
-
-> If you choose to delete a certificate by its subject, you should exercise extreme caution because the command ```Get-PKICertificates -DeleteBySubject www.example.com``` will delete all certificates that are _-like "*$DeleteBySubject*"_. Please read [https://technet.microsoft.com/en-us/library/hh847759.aspx](https://technet.microsoft.com/en-us/library/hh847759.aspx) for additional information on how PowerShell processes information compared with the -like operator before you choose to use DeleteBySubject.
+> If you choose to delete a certificate by its subject, you should exercise extreme caution because the command ```Get-PKICertificates -DeleteBySubject www.example.com``` will delete all certificates that are *-like "*$DeleteBySubject*"*. Please read [https://technet.microsoft.com/en-us/library/hh847759.aspx](https://technet.microsoft.com/en-us/library/hh847759.aspx) for additional information on how PowerShell processes information compared with the -like operator before you choose to use DeleteBySubject.
 
 ```powershell
 Get-PKICertificates -DeleteBySubject www.example.com
