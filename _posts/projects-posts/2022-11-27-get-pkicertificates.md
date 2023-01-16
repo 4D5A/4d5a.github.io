@@ -38,7 +38,7 @@ Get-PKICertificates -DeleteCertificate XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 
-##### How to bulk delete certificates with their thumbprints
+#### How to bulk delete certificates with their thumbprints
 If there is a need to bulk delete certificates and you know their thumbprints, you can create a CSV file that has a header of *thumbprint*,*systemstore*.*physicalstore*.
 
 If you create the CSV file with those columns and provide the information for each certificate you can run the following command to delete the certificates by their thumbprints.
