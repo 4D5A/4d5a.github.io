@@ -37,6 +37,7 @@ If you do not specify the SystemStore and PhysicalStore to use, the script will 
 Get-PKICertificates -DeleteCertificate XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
+
 ##### How to bulk delete certificates with their thumbprints
 If there is a need to bulk delete certificates and you know their thumbprints, you can create a CSV file that has a header of *thumbprint*,*systemstore*.*physicalstore*.
 
@@ -45,6 +46,7 @@ If you create the CSV file with those columns and provide the information for ea
 ```powershell
 Get-PKICertificates -BulkDelete C:\certificates-to-delete.csv
 ```
+
 
 #### How to delete a certificate by its subject
 
