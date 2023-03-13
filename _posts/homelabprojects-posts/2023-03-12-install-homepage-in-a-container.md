@@ -51,10 +51,9 @@ For our use case, we are going to change "3000" to "80" because we want Homepage
 >
 >cli.nextStart(['-p', process.env.PORT || 80]);
 >~~~
->
->
->Update the start command in your package.json to use the prod-server.js script like this:
->
+
+Here is what our updated package.json file looks like:
+
 >~~~
 >  "scripts": {
 >    "build": "next build",
