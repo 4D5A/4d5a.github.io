@@ -18,9 +18,11 @@ npm run start
 
 If you want to change the port homepage uses from 3000 to 80, do the following.
 
-```npm install dotenv```
-
 [https://stackoverflow.com/a/69780065](https://stackoverflow.com/a/69780065) references the comment [https://github.com/vercel/next.js/pull/11408#issuecomment-784867637](https://github.com/vercel/next.js/pull/11408#issuecomment-784867637) describing one way we can change the port that a node.js application binds to.
+
+This method requires dotenv so we need to install it before we continue with these instructions.
+
+```npm install dotenv```
 
 >Create a script for your prod environment in the project root e.g. prod-server.js
 >~~~
