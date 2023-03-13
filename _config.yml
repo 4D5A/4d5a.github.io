@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   CTF Writeups: "ctfwriteups"
 #  Presentations: "presentations"
-  Home Lab: "homelab"
+  Home Lab: "homelabprojects"
   Projects: "projects"
   Home: "https://4d5a.github.io"
 

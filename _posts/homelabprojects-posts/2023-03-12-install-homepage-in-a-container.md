@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Homepage in a Container
-categories: [homelabproject]
+categories: [homelabprojects]
 tags: [proxmox, linux, container, homepage]
 after-content: [disclaimer-notice.html]
 ---
