@@ -20,25 +20,25 @@ If you want to change the port homepage uses from 3000 to 80, do the following.
 
 ```npm install dotenv```
 
-Create a script for your prod environment in the project root e.g. prod-server.js
-~~~
-// prod-server.js
-require('dotenv').config(); // require dotenv
-const cli = require('next/dist/cli/next-start');
-
-cli.nextStart(['-p', process.env.PORT || 80]);
-
-~~~
-
-Update the start command in your package.json to use the prod-server.js script like this:
-
-~~~
-  "scripts": {
-    "build": "next build",
-    "start": "node prod-server.js"
-  }
-
-~~~
+>Create a script for your prod environment in the project root e.g. prod-server.js
+>~~~
+>// prod-server.js
+>require('dotenv').config(); // require dotenv
+>const cli = require('next/dist/cli/next-start');
+>
+>cli.nextStart(['-p', process.env.PORT || 80]);
+>~~~
+>
+>
+>Update the start command in your package.json to use the prod-server.js script like this:
+>
+>~~~
+>  "scripts": {
+>    "build": "next build",
+>    "start": "node prod-server.js"
+>  }
+>
+>~~~
 
 ```npm run build```
 
