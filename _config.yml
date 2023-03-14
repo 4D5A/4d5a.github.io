@@ -21,6 +21,7 @@ author: 4D5A
 
 navbar-links:
   About Me: "aboutme"
+  Failclosed: "https://failclosed.com"
   CTF Writeups: "ctfwriteups"
 #  Presentations: "presentations"
   Home Lab: "homelabprojects"
