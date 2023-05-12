@@ -4,7 +4,7 @@ title: How to configure DKIM in Microsoft 365
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-tags: [Email, Microsoft 365, Exchange Online, DKIM, DNS]
+tags: [Email, Microsoft 365, Exchange Online, DKIM, DNS, Email Authentication]
 after-content: [disclaimer-notice.html]
 ---
 DomainKeys Identified Mail (DKIM) is a solution for determining if the content of an email was modified after it was sent and to verify that the domain provided in the From address matches the domain name in cryptographic signature added by DKIM.<sup>1</sup>

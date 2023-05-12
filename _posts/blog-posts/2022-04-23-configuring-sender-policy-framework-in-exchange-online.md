@@ -4,7 +4,7 @@ title: Configuring sender policy framework in Exchange Online
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-tags: [Email, Microsoft 365, Exchange Online, DNS, SFP]
+tags: [Email, Microsoft 365, Exchange Online, DNS, SFP, Email Authentication]
 after-content: [disclaimer-notice.html]
 ---
 

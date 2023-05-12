@@ -4,7 +4,7 @@ title: Blocking spoofed emails
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-tags: [Email, RFC, DNS, SPF]
+tags: [Email, RFC, DNS, SPF, Email Authentication]
 after-content: [disclaimer-notice.html]
 ---
 
