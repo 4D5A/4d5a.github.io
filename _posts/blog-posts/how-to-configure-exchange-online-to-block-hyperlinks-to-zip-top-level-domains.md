@@ -1,6 +1,7 @@
 ---
 layout: post
-title: How to configure exchange online to block hyperlinks to zip top level domainsgh-repo: 4D5A
+title: How to configure exchange online to block hyperlinks to zip top level domains
+gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
 tags: [Email, Microsoft 365, Exchange Online]
