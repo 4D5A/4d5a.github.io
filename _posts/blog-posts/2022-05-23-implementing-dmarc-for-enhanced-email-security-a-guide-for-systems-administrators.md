@@ -64,8 +64,13 @@ As a systems administrator, implementing DMARC authentication is a crucial step 
 ## Endnotes
 
 [1] [https://www.dmarc.org/what-is-spf/](https://www.dmarc.org/what-is-spf/)
+
 [2] [https://www.dmarc.org/what-is-dkim/](https://www.dmarc.org/what-is-dkim/)
+
 [3] [https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365)
+
 [4] [https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365)
+
 [5] [https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365)
+
 [6] [https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-dmarc-in-microsoft-365)
