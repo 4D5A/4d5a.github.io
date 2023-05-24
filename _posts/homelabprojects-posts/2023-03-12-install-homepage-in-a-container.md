@@ -64,7 +64,7 @@ Here is what our updated package.json file looks like:
 >
 >~~~
 
-Then we need to build the node.js application and run it.<sup1>1</sup>
+Then we need to build the node.js application and run it.<sup>1</sup>
 
 ```npm run build```
 
