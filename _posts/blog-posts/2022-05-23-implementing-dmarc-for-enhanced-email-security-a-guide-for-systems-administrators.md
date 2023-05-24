@@ -4,7 +4,7 @@ title: 'Implementing DMARC for Enhanced Email Security: A Guide for Systems Admi
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-tags: [Email, Microsoft 365, Exchange Online, DNS, SFP, Email Authentication]
+tags: [Email, Microsoft 365, Exchange Online, DNS, SFP, DMARC, Email Authentication]
 after-content: [disclaimer-notice.html]
 ---
 
