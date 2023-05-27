@@ -21,13 +21,14 @@ author: 4D5A
 
 navbar-links:
   Home: "https://4d5a.github.io"
+  Posts:
     - CTF Writeups: "ctfwriteups"
+    - Home Lab: "homelabprojects"
+    - Projects: "projects"
+    - Email Authentication: "emailauthentication"
   About Me: "aboutme"
-  Home Lab: "homelabprojects"
-  Projects: "projects"
   Failclosed: "https://failclosed.com"
 #  Presentations: "presentations"
-  Email Authentication: "emailauthentication"
 
 
 ################
