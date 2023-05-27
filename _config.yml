@@ -25,7 +25,6 @@ navbar-links:
   CTF Writeups: "ctfwriteups"
 #  Presentations: "presentations"
   Email Authentication: "emailauthentication"
-    New: ""
   Home Lab: "homelabprojects"
   Projects: "projects"
   Home: "https://4d5a.github.io"

@@ -1,5 +1,5 @@
 ---
 layout: homelabprojects
-title: Home Lab Projects
+title: Home Lab
 subtitle: 
 ---
