@@ -21,7 +21,8 @@ author: 4D5A
 
 navbar-links:
   Home: "https://4d5a.github.io"
-  - CTF Writeups: "ctfwriteups"
+    -
+      CTF Writeups: "ctfwriteups"
   About Me: "aboutme"
   Home Lab: "homelabprojects"
   Projects: "projects"
