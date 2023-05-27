@@ -4,8 +4,6 @@ title: About me
 subtitle: 
 ---
 
-[![4D5A's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=4D5A&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
-
 [![GitHub recordedparadox](https://img.shields.io/github/followers/4D5A?label=Follow&style=social)](https://github.com/4D5A)
 
 [![Twitter recordedparadox](https://img.shields.io/twitter/follow/recordedparadox?style=social)](https://witter.com/recordedparadox)
@@ -15,6 +13,8 @@ subtitle:
 <img alt="Red Team" src="https://img.shields.io/badge/-Red%20Team-red">
 <img alt="InfoSec" src="https://img.shields.io/badge/-InfoSec-yellow">
 <img alt="DFIR" src="https://img.shields.io/badge/-DFIR-yellow">
+
+[![4D5A's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=4D5A&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
 
 SOC Manager, Blue Team, Sometimes Red Team, Infosec, DFIR. Posts are my own.
 
