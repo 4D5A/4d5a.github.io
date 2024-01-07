@@ -71,4 +71,8 @@ Original encoded text ->
 
     <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-affine-cipher-decode-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge affine cipher decode.png' />
 
+    Step 5 decoded text ->
+
+    ```/ddo!$10!pod!KPOWRE@EFRKCARRA!eboc!`onuoc!esu!b`a!nofs.re`/rsoceson{i/www..;snrrf!ra!esib`afcpe{!yuZ```
+
 6. 
