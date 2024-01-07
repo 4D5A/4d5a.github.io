@@ -39,7 +39,7 @@ Original encoded text ->
 
     ```ÆÎj+Ü'{«ëÜ*£ªøn3º¹ãeÒ,âôGô'Ò'Zº2!øïÖæ+yr¦DMëCiü¿â ```
 
-We need to determine what type of file this is. You can do that by checking the header. This header might not be easy to quickly identify if you haven't encountered this type of file in the past. CyberChef offers multiple ways to determine what type of file this is. One method is to use the "Magic" Operation which will take the output and show you multiple possible new outputs and which Operations will provide each result. Another method is to click the "Magic Wand" button. Both methods show the file is likely compressed using Gzip.
+    We need to determine what type of file this is. You can do that by checking the header. This header might not be easy to quickly identify if you haven't encountered this type of file in the past. CyberChef offers multiple ways to determine what type of file this is. One method is to use the "Magic" Operation which will take the output and show you multiple possible new outputs and which Operations will provide each result. Another method is to click the "Magic Wand" button. Both methods show the file is likely compressed using Gzip.
 
 3. Use the Gunzip Operation
 
