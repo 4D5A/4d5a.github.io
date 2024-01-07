@@ -31,13 +31,13 @@ Original encoded text ->
 
     <img src="{{ 'assets/img/2024-01-07-impose-cost-01-06-2024-challenege/2024-01-07-impose-cost-01-06-2024-challenege-base64-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge base64.png' />
 
-I added the "From Base64" Operation and that shows up new output.
+    I added the "From Base64" Operation and that shows up new output.
 
     <img src="{{ 'assets/img/2024-01-07-impose-cost-01-06-2024-challenege/2024-01-07-impose-cost-01-06-2024-challenege-from-base64-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge from base64.png' />
 
     Step 2 decoded text ->
 
-    ```ÆÎj+Ü'{«ëÜ*£ªøn3º¹ãeÒ,âôGô'Ò'Zº2!øïÖæ+yr¦DMëCiü¿â ```
+    ```ÆÎj+Ü'{«ëÜ*£ªøn3º¹ãeÒ,âôGô'Ò'Zº2!øïÖæ+yr¦DMëCiü¿â ```
 
 We need to determine what type of file this is. You can do that by checking the header. This header might not be easy to quickly identify if you haven't encountered this type of file in the past. CyberChef offers multiple ways to determine what type of file this is. One method is to use the "Magic" Operation which will take the output and show you multiple possible new outputs and which Operations will provide each result. Another method is to click the "Magic Wand" button. Both methods show the file is likely compressed using Gzip.
 
