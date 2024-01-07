@@ -78,3 +78,34 @@ Original encoded text ->
 6. The text I decoded in Step 5 includes the string "www." but let's go back to the challenge and think about what we are looking for.
 
      <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-description.png' | relative_url }}" alt='Impose Cost January 2024 Challenge description.png' />
+
+     Could we be looking for "www." be part of a string related to purchasing merchandise from imposecost.net? I went to www.imposecost.net and clicked on "Shop". That link goes to https://www.imposecost.net/shop. I looked at the encoded text and thought it looked like the text might be reversed. I used the "Reverse Operation" in CyberChef and reviewed the output.
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-reverse-screenshot.png' | relative_url }}" alt='Impose Cost January 2024 Challenge reverse.png' />
+
+    Step 6 decoded text ->
+
+    ```Zuy!{epcfa`bise!ar!frrns;..www/i{nosecosr/`er.sfon!a`b!use!couno`!cobe!ARRACKRFE@ERWOPK!dop!01$!odd/```
+
+7. I missed a step and I didn't know what it was, so I decided to stare at the code and see if anything started to come to mind.
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-brute-force-screenshot.png' | relative_url }}" alt='Impose Cost January 2024 Challenge brute force.png' />
+
+    It was clear that the flag was a coupon code and that going back and by skipping a specific number of characters in the string would result in me arrving at one or more consecutive characters in cleartext (which should have told what step in the process I misssed was). The coupond code was somewhere in the following string.
+
+    ```ARRACKRFE@ERWOPK!dop!01$!odd/```
+
+8. "ARRACK" almost looks like ATTACK. I went to Twitter and searched for the keywords ImposeCost and attack.
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-imposecost-attack-screenshot.png' | relative_url }}" alt='Impose Cost January 2024 Challenge imposecost attack.png' />
+
+    Does "attack the network" fit what is known about the encoded text?
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-brute-force-attack-the-network-screenshot.png' | relative_url }}" alt='Impose Cost January 2024 Challenge brute force attack the network.png' />
+
+    ```ATTACKTHENETWORK``` is the correct answer!
+
+Thank you to [@ImposeCost](https://twitter.com/ImposeCost) for designing this challenge. Next time I see that skipping a specific number of characters in a string results in me arriving at one or more consecutive characters in cleartext, I will remember to XOR the string.
+
+
+
