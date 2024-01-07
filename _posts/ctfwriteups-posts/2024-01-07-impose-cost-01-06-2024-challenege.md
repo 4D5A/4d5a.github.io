@@ -27,7 +27,12 @@ I added the "From Base64" Operation and that shows up new output.
 
 <img src="{{ 'assets/img/2024-01-07-impose-cost-01-06-2024-challenege/2024-01-07-impose-cost-01-06-2024-challenege-from-base64-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge from base64.png' />
 
-We need to determine what type of file this is. YOu can do that by checking the header. This header might not be easy to quickly identify if you haven't encountered this type of file in the past. CyberChef offers multiple ways to determine what type of file this is. One method is to use the "Magic" operation which will take the output and show you multiple possible new outputs and which Operations will provide each result. Another method is to click the "Magic Wand" button. Both methods show the file is likely compressed using Gzip.
+We need to determine what type of file this is. You can do that by checking the header. This header might not be easy to quickly identify if you haven't encountered this type of file in the past. CyberChef offers multiple ways to determine what type of file this is. One method is to use the "Magic" Operation which will take the output and show you multiple possible new outputs and which Operations will provide each result. Another method is to click the "Magic Wand" button. Both methods show the file is likely compressed using Gzip.
 
 3. Use the Gunzip Operation
+
+<img src="{{ 'assets/img/2024-01-07-impose-cost-01-06-2024-challenege/2024-01-07-impose-cost-01-06-2024-challenege-from-base64-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge gunzip.png' />
+
+4. You might recognize the value as Base32 or you can use the "Magic" Operation or click the "Magic Wand" button.
+
 
