@@ -4,7 +4,7 @@ title: Impose Cost January 2024 Challenge
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]
-tags: [imposecost,ctf-decoding]
+tags: [ImposeCost-CTF,ctf-decoding]
 after-content: [disclaimer-notice.html]
 ---
 ### Explanation
