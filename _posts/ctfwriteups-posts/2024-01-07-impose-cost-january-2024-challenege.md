@@ -10,7 +10,7 @@ after-content: [disclaimer-notice.html]
 ### Explanation
 On January 6, 2024, [@ImposeCost](https://twitter.com/ImposeCost/status/1743691690588647491) posted a challege to decode text and obtain the "flag".
 
-    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge Screenshot' />
+<img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge Screenshot' />
 
 ### Solving the Challenge
 They way I solved this challenge is *not* the intended method. I missed an important step but I was still able to solve the challenge. Hopefully this helps someone else.
