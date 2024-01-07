@@ -35,4 +35,5 @@ We need to determine what type of file this is. You can do that by checking the 
 
 4. You might recognize the value as Base32 or you can use the "Magic" Operation or click the "Magic Wand" button.
 
+<img src="{{ 'assets/img/2024-01-07-impose-cost-01-06-2024-challenege/2024-01-07-impose-cost-01-06-2024-challenege-from-base32-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge base32.png' />
 
