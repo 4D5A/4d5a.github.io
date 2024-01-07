@@ -66,3 +66,9 @@ Original encoded text ->
     <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-rot-cipher-result-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge rot cipher result.png' />
 
     <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-affine-cipher-result-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge affine cipher result.png' />
+
+    Both ciphers show a character shift of 14. I added the Affine Cipher Decode Operation in CyberChef and pasted the value from dcode.fr.
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-affine-cipher-decode.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge affine cipher decode.png' />
+
+6. 
