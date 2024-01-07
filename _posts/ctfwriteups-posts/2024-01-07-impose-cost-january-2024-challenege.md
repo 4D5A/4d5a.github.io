@@ -56,3 +56,13 @@ Original encoded text ->
     Step 4 decoded text ->
 
     ```/rrc!$10!dcr!YDCKFS@STFYQOFFO!spcq!`cbicq!sgi!p`o!bctg.fs`/fgcqsgcb{w/kkk..;gbfft!fo!sgwp`otqds{!miN```
+
+5. This is where I initially got stuck. I used https://www.dcode.fr/cipher-identifier to determine what type of cipher may have encoded the text. The website tells us the cipher is most likely ROT (you could also use an Affine cipher).
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-detect-cipher-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge detect cipher.png' />
+
+    We can see the characters "www." in the decoded text so we might be headed in the right direction.
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-rot-cipher-result-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge rot cipher result.png' />
+
+    <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenege/2024-01-07-impose-cost-january-2024-challenege-affine-cipher-result-screenshot.png' | relative_url }}" alt='Impose Cost 01-06-24 Challenge affine cipher result.png' />
