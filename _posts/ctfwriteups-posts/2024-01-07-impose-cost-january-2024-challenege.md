@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Impose Cost january-2024 Challenge
+title: Impose Cost January 2024 Challenge
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [ctfwriteups]
