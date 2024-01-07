@@ -87,7 +87,7 @@ Original encoded text ->
 
     ```Zuy!{epcfa`bise!ar!frrns;..www/i{nosecosr/`er.sfon!a`b!use!couno`!cobe!ARRACKRFE@ERWOPK!dop!01$!odd/```
 
-7. I missed a step and I didn't know what it was, so I decided try to mentally brute force the code. :)
+7. I missed a step and I didn't know what it was, so I decided try to manually brute force the code. :)
 
     <img src="{{ 'assets/img/2024-01-07-impose-cost-january-2024-challenge/2024-01-07-impose-cost-january-2024-challenge-brute-force-screenshot.png' | relative_url }}" alt='Impose Cost January 2024 Challenge brute force.png' />
 
