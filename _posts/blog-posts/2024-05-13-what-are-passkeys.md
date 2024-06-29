@@ -4,7 +4,7 @@ title: What are passkeys
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-tags: [passkeys, Multi-Factor Authentication, authentication, 2FA, MFA, Two-Step Verification]
+tags: [AI, passkeys, Multi-Factor Authentication, authentication, 2FA, MFA, Two-Step Verification]
 after-content: [disclaimer-notice.html]
 ---
 ## **Understanding Passkeys: A New Era of Authentication**
