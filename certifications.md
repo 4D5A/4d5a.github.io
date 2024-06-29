@@ -14,7 +14,7 @@ Barracuda
 * Barracuda Impersonation Protection - Foundation 
 
 CompTIA
-''' bash
+~~~
 |CompTIA A+ -----------------\
 |                             \
 |                              ------------ CompTIA IT Operations Specialist ------------\                             
@@ -22,7 +22,7 @@ CompTIA
 |CompTIA Network+ -----------/                                                             -------------- CompTIA Secure Infrastructure Specialist 
 |                                                                                         /
 |---------------------------------------------------CompTIA Security+ -------------------/
-'''
+~~~
 EC-Council
 
 * Certified Ethical Hacker (CEH) v8
@@ -31,13 +31,13 @@ EC-Council
 Microsoft
 
 * MCSA: Office 365
-''' bash
+~~~
 |Exam 346: Managing Office 365 Identities and Requirements -----------------\
 |                                                                            \
 |                                                                             ------------ MCSA: Office 365
 |                                                                            /
 |Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
-'''
+~~~
 Fortinet
 
 * Fortinet Certified Fundamentals Cybersecurity
