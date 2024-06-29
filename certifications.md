@@ -11,18 +11,18 @@ Barracuda
 * Barracuda Cloud to Cloud Backup - Foundation (Engineer)
 * Barracuda Cloud Archiving Service - Foundation (Engineer)
 * Barracuda Incident Response - Foundation (Engineer)
-* Barracuda Impersonation Protection - Foundation (Engineer)
+* Barracuda Impersonation Protection - Foundation 
 
 CompTIA
-
-CompTIA A+ -----------------\
-                             \
-                              ------------ CompTIA IT Operations Specialist ------------\                             
-                             /                                                           \ 
-CompTIA Network+ -----------/                                                             -------------- CompTIA Secure Infrastructure Specialist 
-                                                                                         /
----------------------------------------------------CompTIA Security+ -------------------/
-
+''' bash
+|CompTIA A+ -----------------\
+|                             \
+|                              ------------ CompTIA IT Operations Specialist ------------\                             
+|                             /                                                           \ 
+|CompTIA Network+ -----------/                                                             -------------- CompTIA Secure Infrastructure Specialist 
+|                                                                                         /
+|---------------------------------------------------CompTIA Security+ -------------------/
+'''
 EC-Council
 
 * Certified Ethical Hacker (CEH) v8
@@ -31,14 +31,13 @@ EC-Council
 Microsoft
 
 * MCSA: Office 365
-
-Exam 346: Managing Office 365 Identities and Requirements -----------------\
-                                                                            \
-                                                                             ------------ MCSA: Office 365
-                                                                            /
-Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
-
-
+''' bash
+|Exam 346: Managing Office 365 Identities and Requirements -----------------\
+|                                                                            \
+|                                                                             ------------ MCSA: Office 365
+|                                                                            /
+|Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
+'''
 Fortinet
 
 * Fortinet Certified Fundamentals Cybersecurity
