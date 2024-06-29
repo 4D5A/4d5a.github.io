@@ -3,7 +3,7 @@ layout: page
 title: Certifications
 subtitle: 
 ---
-Barracuda Networks
+**Barracuda Networks**
 
 * Barracuda SecureEdge - Foundation (Engineer)
 * Barracuda CloudGen Firewall - Foundation (Engineer)
@@ -13,7 +13,7 @@ Barracuda Networks
 * Barracuda Incident Response - Foundation (Engineer)
 * Barracuda Impersonation Protection - Foundation (Engineer)
 
-CompTIA
+**CompTIA**
 
 * CompTIA A+
 * CompTIA Network+
@@ -31,12 +31,12 @@ CompTIA
 |---------------------------------------------------CompTIA Security+ -------------------/
 ~~~
 
-EC-Council
+**EC-Council**
 
 * Certified Ethical Hacker (CEH) v8
 * Computer Hacking Forensic Investigator (CHFI) v8
 
-Microsoft
+**Microsoft**
 
 * MCSA: Office 365
 
@@ -47,7 +47,8 @@ Microsoft
 |                                                                            /
 |Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
 ~~~
-Fortinet
+
+**Fortinet**
 
 * Fortinet Certified Fundamentals Cybersecurity
 
@@ -55,7 +56,7 @@ Google
 
 * Google IT Support Certificate
 
-International Society of Forensic Computer Examiners
+**International Society of Forensic Computer Examiners**
 
 * Certified Computer Examiner
 
