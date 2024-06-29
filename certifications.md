@@ -11,7 +11,7 @@ Barracuda Networks
 * Barracuda Cloud to Cloud Backup - Foundation (Engineer)
 * Barracuda Cloud Archiving Service - Foundation (Engineer)
 * Barracuda Incident Response - Foundation (Engineer)
-* Barracuda Impersonation Protection - Foundation 
+* Barracuda Impersonation Protection - Foundation (Engineer)
 
 CompTIA
 
