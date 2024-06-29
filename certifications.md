@@ -36,18 +36,6 @@ subtitle:
 * Certified Ethical Hacker (CEH) v8
 * Computer Hacking Forensic Investigator (CHFI) v8
 
-**Microsoft**
-
-* MCSA: Office 365
-
-~~~
-|Exam 346: Managing Office 365 Identities and Requirements -----------------\
-|                                                                            \
-|                                                                             ------------ MCSA: Office 365
-|                                                                            /
-|Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
-~~~
-
 **Fortinet**
 
 * Fortinet Certified Fundamentals Cybersecurity
@@ -60,3 +48,14 @@ Google
 
 * Certified Computer Examiner
 
+**Microsoft**
+
+* MCSA: Office 365
+
+~~~
+|Exam 346: Managing Office 365 Identities and Requirements -----------------\
+|                                                                            \
+|                                                                             ------------ MCSA: Office 365
+|                                                                            /
+|Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
+~~~
