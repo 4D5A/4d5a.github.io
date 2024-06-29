@@ -15,13 +15,13 @@ Barracuda
 
 CompTIA
 
-|CompTIA A+ -----------------\
-|                             \
-|                              ------------ CompTIA IT Operations Specialist ------------\                             
-|                             /                                                           \ 
-|CompTIA Network+ -----------/                                                             -------------- CompTIA Secure Infrastructure Specialist 
-|                                                                                         /
-|---------------------------------------------------CompTIA Security+ -------------------/
+CompTIA A+ -----------------\
+                             \
+                              ------------ CompTIA IT Operations Specialist ------------\                             
+                             /                                                           \ 
+CompTIA Network+ -----------/                                                             -------------- CompTIA Secure Infrastructure Specialist 
+                                                                                         /
+---------------------------------------------------CompTIA Security+ -------------------/
 
 EC-Council
 
@@ -32,11 +32,11 @@ Microsoft
 
 * MCSA: Office 365
 
-|Exam 346: Managing Office 365 Identities and Requirements -----------------\
-|                                                                            \
-|                                                                             ------------ MCSA: Office 365
-|                                                                            /
-|Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
+Exam 346: Managing Office 365 Identities and Requirements -----------------\
+                                                                            \
+                                                                             ------------ MCSA: Office 365
+                                                                            /
+Exam 347: Enabling Office 365 Services ------------------------------------/                                                             
 
 
 Fortinet
