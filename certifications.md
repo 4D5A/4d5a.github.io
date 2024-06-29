@@ -3,7 +3,7 @@ layout: page
 title: Certifications
 subtitle: 
 ---
-Barracuda
+Barracuda Networks
 
 * Barracuda SecureEdge - Foundation (Engineer)
 * Barracuda CloudGen Firewall - Foundation (Engineer)
