@@ -40,7 +40,7 @@ subtitle:
 
 * Fortinet Certified Fundamentals Cybersecurity
 
-Google
+**Google**
 
 * Google IT Support Certificate
 
