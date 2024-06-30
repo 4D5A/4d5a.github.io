@@ -4,7 +4,7 @@ title: How to configure exchange online to block hyperlinks to zip top level dom
 gh-repo: 4D5A
 gh-badge: [follow]
 categories: [blog]
-tags: [AI, Email, Microsoft 365, Exchange Online]
+tags: [Email, Microsoft 365, Exchange Online]
 after-content: [disclaimer-notice.html]
 ---
 
