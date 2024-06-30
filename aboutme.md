@@ -11,7 +11,7 @@ subtitle:
 [![Twitter recordedparadox](https://img.shields.io/twitter/follow/recordedparadox?style=social)](https://witter.com/recordedparadox)
 [![Mastodon](https://img.shields.io/mastodon/follow/109299763334110460?domain=https%3A%2F%2Finfosec.exchange&style=social)](https://infosec.exchange/users/recordedparadox)
 
-Infosec and Cybersecurity. Posts are my own.
+Cybersecurity - Digital Forensics - Microsoft 365. Posts are my own.
 
 - 🔭 I’m currently working on Microsoft Entra ID, Microsoft 365, Migrating from on-premises domain joined to hybrid Microsoft Entra ID and domain joined, Microsoft Defender for Endpoint, and Active Directory
 - 🌱 I’m currently learning Microsoft Endpoint Manager, Microsoft Azure, Microsoft Graph SDK, and Git
