@@ -11,9 +11,9 @@ subtitle:
 [![Twitter recordedparadox](https://img.shields.io/twitter/follow/recordedparadox?style=social)](https://witter.com/recordedparadox)
 [![Mastodon](https://img.shields.io/mastodon/follow/109299763334110460?domain=https%3A%2F%2Finfosec.exchange&style=social)](https://infosec.exchange/users/recordedparadox)
 
-SOC Manager, Blue Team, Sometimes Red Team, Infosec, DFIR. Posts are my own.
+DFIR, Infosec, Blue Team, Sometimes Red Team. Posts are my own.
 
-- 🔭 I’m currently working on Azure Active Directory, Microsoft 365, Migrating from on-premises domain joined to hybrid azure active directory domain joined, Microsoft Defender for Endpoint, and Active Directory
-- 🌱 I’m currently learning Microsoft Endpoint Manager, Microsoft Graph SDK, and Git
-- 💬 Ask me about Azure Active Directory, Microsoft Intune, and PowerShell
+- 🔭 I’m currently working on Microsoft Entra ID, Microsoft 365, Migrating from on-premises domain joined to hybrid Microsoft Entra ID and domain joined, Microsoft Defender for Endpoint, and Active Directory
+- 🌱 I’m currently learning Microsoft Endpoint Manager, Microsoft Azure, Microsoft Graph SDK, and Git
+- 💬 Ask me about Microsoft Entra ID, Microsoft Intune, and PowerShell
 - 😄 Pronouns: he/his/him
