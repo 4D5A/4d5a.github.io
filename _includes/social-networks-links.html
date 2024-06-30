@@ -180,6 +180,18 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.credly -%}
+  <li class="list-inline-item">
+    <a href-"https://www.credly.com/users/{{ site.social-network-links.credly }}/badges" title="Credly">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-solid fa-award fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Credly</span>
+   </a>
+  </li>
+{%- endif -%}
+
 {%- if site.social-network-links.instagram -%}
   <li class="list-inline-item">
     <a href="https://www.instagram.com/{{ site.social-network-links.instagram }}" title="Instagram">
