@@ -29,4 +29,4 @@ SSH into 192.168.8.79
 From the computer that Calibre Library is installed on, copy the contents of the Calibre Library directory to /library
 
 CTRL + C
-nohup ./venv/bin/cps
+nohup /opt/calibre-web/venv/bin/cps
