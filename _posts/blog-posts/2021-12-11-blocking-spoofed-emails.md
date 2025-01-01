@@ -7,7 +7,6 @@ categories: [blog]
 tags: [Email, RFC, DNS, SPF, Email Authentication]
 after-content: [disclaimer-notice.html]
 ---
-<meta name="fediverse:creator" content="@recordedparadox@infosec.exchange">
 
 TLDR; Who is allowed to send email for your domain name? Did you know you can tell the whole world which servers are allowed to send email from your domain name (and therefore, email sent from servers which you have not authorized should be considered fraudulent and the receiving email server should block them)? Sender Policy Framework (SPF) records are a Domain Name System (DNS) text (TXT) record which allow the owner of a domain name to specify who is allowed to send email saying they are that domain name. Basically this is a way to help determine if the sender information is real or if someone setup a fraudulent email server and is using a domain name which they are not authorized to use.
 
