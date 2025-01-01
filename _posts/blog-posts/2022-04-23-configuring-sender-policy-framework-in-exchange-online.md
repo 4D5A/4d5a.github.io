@@ -8,7 +8,7 @@ tags: [Email, Microsoft 365, Exchange Online, DNS, SFP, Email Authentication]
 after-content: [disclaimer-notice.html]
 ---
 
-Before you change the configuration of your Exchange Online environment or public DNS, you should be comfortable with understanding what Sender Policy Framework (SPF) is and why it is important to properly configure. I wrote a introduction to SPF named, [Blocking Spoofed Emails]({{ site.baseurl }}{% post_url 2021-12-11-blocking-spoofed-emails %}).
+Before you change the configuration of your Exchange Online environment or public DNS, you should be comfortable with understanding what Sender Policy Framework (SPF) is and why it is important to properly configure. I wrote a introduction to SPF named, [Blocking Spoofed Emails]({% post_url 2021-12-11-blocking-spoofed-emails %}).
 
 After you have added your custom domain to your Microsoft 365 Tenant, you will want to configure public DNS records to allow you to use different features. In this story, we will focus on configuring the SPF record. You can add an SPF record in public DNS, by logging into the DNS hosting provider for your domain name. This is usually the same account provided by your Internet domain registrar, but it is also possible to use one company for your Internet domain registrar and a different company for your DNS hosting.
 
