@@ -5,7 +5,7 @@ categories: [homelabprojects]
 tags: [proxmox, linux, container, homepage]
 after-content: [disclaimer-notice.html]
 ---
-Use Alpine Linux to create a proxmox container
+Use Alpine Linux to create a proxmox container.
 
 First, we need to install gitea and nano (because nano is the best text editor).
 
