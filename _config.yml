@@ -28,7 +28,7 @@ navbar-links:
     - Email Authentication: "emailauthentication"
   About Me: "aboutme"
   Failclosed: "https://failclosed.com"
-#  Presentations: "presentations"
+  #Presentations: "presentations"
 
 
 ################
