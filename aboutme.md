@@ -13,8 +13,8 @@ subtitle:
 
 Cybersecurity - Digital Forensics - Microsoft 365. Posts are my own.
 
-- 🔭 I’m currently working with Microsoft Copilot, ChatGPT, Microsoft Entra ID, Microsoft 365, Migrating from on-premises domain joined to hybrid Microsoft Entra ID and domain joined, Microsoft Defender for Endpoint, and Active Directory
+- 🔭 I’m currently working on projects which involve Microsoft Copilot, ChatGPT, Microsoft Entra ID, Microsoft 365, Migrating from on-premises domain joined to hybrid Microsoft Entra ID and domain joined, Microsoft Defender for Endpoint, and Active Directory
 - 🌱 I’m currently learning Microsoft Endpoint Manager, Microsoft Azure, Microsoft Graph SDK, and Git
-- 💬 Ask me about Microsoft EMicrosoft Copilot, ChatGPT, Microsoftntra ID, Microsoft Intune, and PowerShell
+- 💬 Ask me about Microsoft Copilot, ChatGPT, Microsoft Entra ID, Microsoft Intune, and PowerShell
 - 😄 Pronouns: he/his/him
 - [Certifications](https://4d5a.github.io/certifications)
