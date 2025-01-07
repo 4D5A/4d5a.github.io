@@ -8,7 +8,7 @@ subtitle:
 
 [![GitHub recordedparadox](https://img.shields.io/github/followers/4D5A?label=Follow&style=social)](https://github.com/4D5A)
 
-[![Twitter recordedparadox](https://img.shields.io/twitter/follow/recordedparadox?style=social)](https://witter.com/recordedparadox)
+[![Twitter recordedparadox](https://img.shields.io/twitter/follow/recordedparadox?style=social)](https://twitter.com/recordedparadox)
 [![Mastodon](https://img.shields.io/mastodon/follow/109299763334110460?domain=https%3A%2F%2Finfosec.exchange&style=social)](https://infosec.exchange/users/recordedparadox)
 
 Cybersecurity - Digital Forensics - Microsoft 365. Posts are my own.
